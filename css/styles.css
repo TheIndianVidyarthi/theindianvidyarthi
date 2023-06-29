@@ -1,0 +1,53 @@
+@font-face {
+    font-family: Poppins;
+    src: url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+}
+
+body {
+    background-color: black;
+    font-family: Poppins;
+    font-weight: 600;
+    margin: 0px;
+}
+
+.nav{
+    background: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+.logo{
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.menu{
+    padding-right: 5%;
+}
+
+.menu-items{
+    list-style-type: none;
+    margin: 0;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.menu-item{
+    float: left;
+    padding-left: 40px;
+    height: 40px;
+}
+
+.menu-item a{
+    color: black;
+    text-decoration: none;
+}
+.menu-item :hover{
+    color: rgb(141, 0, 197);
+    background-color: rgb(255, 201, 231);
+}
