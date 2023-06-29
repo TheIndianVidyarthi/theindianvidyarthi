@@ -3,38 +3,48 @@
     src: url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 body {
     background-color: black;
-    font-family: Poppins;
-    font-weight: 600;
     margin: 0px;
+    font-family: Poppins;
+    font-weight: 300;
 }
 
 .nav{
-    background: white;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    background: white;
+    position: fixed;
     height: 60px;
     width: 100%;
-    position: fixed;
     top: 0;
+    font-weight: 600;
+    font-size: large;
 }
 
 .logo{
+    margin: 0px;
     padding-left: 20px;
     padding-top: 20px;
+    max-width: 100px;
 }
 
 .menu{
-    padding-right: 5%;
+    max-width: 1000px;
+    margin: auto;
+    padding-top: 15px;
 }
 
 .menu-items{
     list-style-type: none;
-    margin: 0;
-    padding: 20px;
-    overflow: hidden;
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .menu-item{
@@ -49,4 +59,35 @@ body {
 }
 .menu-item :hover{
     color: rgb(141, 0, 197);
+}
+
+#About {
+    margin-top: 60px;
+    background-color:antiquewhite;
+    height: 600px;
+    width: 100%;
+}
+
+#Blog {
+    background-color: rgb(17, 119, 208);
+    height: 600px;
+    width: 100%;
+}
+
+#Newsletter {
+    background-color: aliceblue;
+    height: 600px;
+    width: 100%;
+}
+
+#Partners {
+    background-color:antiquewhite;
+    height: 600px;
+    width: 100%;
+}
+
+#Contact {
+    background-color:burlywood;
+    height: 600px;
+    width: 100%;
 }
