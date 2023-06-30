@@ -5,7 +5,7 @@
 
 html {
     scroll-behavior: smooth;
-  }
+}
 
 body {
     background-color: black;
@@ -13,6 +13,12 @@ body {
     font-family: Poppins;
     font-weight: 300;
 }
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/*Navbar*/
 
 .nav{
     display: flex;
@@ -25,6 +31,7 @@ body {
     top: 0;
     font-weight: 600;
     font-size: large;
+    overflow: hidden;
 }
 
 .logo{
@@ -61,6 +68,21 @@ body {
     color: rgb(141, 0, 197);
 }
 
+/*Content Part of page*/
+
+#Content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: black;
+    scroll-snap-type: mandatory;
+
+}
+
+#Content > div {
+    scroll-margin: 60px 100px;
+}
+
 #About {
     margin-top: 60px;
     background-color:antiquewhite;
@@ -90,4 +112,8 @@ body {
     background-color:burlywood;
     height: 600px;
     width: 100%;
+}
+
+.title{
+    
 }
