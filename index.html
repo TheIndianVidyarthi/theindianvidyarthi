@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/homeelements.css">
+    <script src="js/index.js"></script>
 </head>
 <body>
     <div class = "nav">
@@ -36,8 +38,61 @@
     </div>
     <div id = "Content">
         <div id = "About">
-            <div class = "">
-                dfjhfsjgj
+            <div class = "slideshow">
+                <div class = "slide fade slide1">
+                    <div class = "slide-image">
+                        <img src = "image/slide1.jpg" alt = "">
+                    </div>
+                    <div class = "slide-text">
+                        This is Photo 1 
+                    </div>  
+                </div>
+                <div class = "slide fade">
+                    <div class = "slide-image">
+                        <img src = "image/slide2.jpg" alt = "">
+                    </div>
+                    <div class = "slide-text">
+                        This is Photo 2
+                    </div>  
+                </div>
+                <div class = "slide fade">
+                    <div class = "slide-image">
+                        <img src = "image/slide3.jpg" alt = "">
+                    </div>
+                    <div class = "slide-text">
+                        This is Photo 3
+                    </div>  
+                </div>
+                <a class = "prev" onclick = "prevslide()">
+                    &#10094;
+                </a>
+                <a class = "next" onclick = "nextslide()">
+                    &#10095;
+                </a> 
+            </div>
+            <div id = "About-content">
+                <div id = "About-left">
+                    <div class = "titles">
+                        The Indian Vidyaarthi
+                    </div>
+                    <div class = "text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Sed ultrices felis nisi, et lacinia lorem pharetra fringilla. 
+                        Aenean imperdiet consectetur nunc, sed ornare orci aliquet id. 
+                        Curabitur eget cursus diam. Vestibulum posuere libero sapien, ac sagittis mi tempus quis. 
+                        Nunc ullamcorper eleifend justo ultricies iaculis. 
+                        Nulla vitae nunc vel ligula varius sagittis eget et velit. 
+                        Ut nec augue commodo est laoreet sollicitudin. 
+                        Nulla volutpat dolor ac sollicitudin dignissim. 
+                        Vestibulum tempus, purus sit amet tempus porttitor, 
+                        augue neque maximus mauris, ut dapibus quam dui at mi.
+                    </div>
+                    <div class = "image">
+                    </div>
+                </div>
+                <div id = "About-right">
+                    <img src = "image/About_Pic.jpg" alt = "">
+                </div>    
             </div>
         </div>
         <div id = "Blog">
