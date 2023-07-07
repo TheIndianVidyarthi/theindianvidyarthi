@@ -1,25 +1,11 @@
-let slideIndex = 1;
-showSlides(slideIndex);
+let slideIndex = 0;
+showSlides();
 
-// Next/previous controls
-function prevslide() {
-  showSlides(slideIndex -= 1);
-}
-function nextslide() {
-  showSlides(slideIndex += 1);
-}
-
-function showSlides(n) {
+function showSlides() {
   let i;
   let slides = document.getElementsByClassName("slide");
-  if (n > slides.length) {
-    slideIndex = 1
-  }
-  if (n < 1) {
-    slideIndex = slides.length;
-  }
-  for (j = 0; j < slides.length; j++) {
-    slides[j].style.display = "none";
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
   }
   if (slideIndex > slides.length) {
     slideIndex = 1

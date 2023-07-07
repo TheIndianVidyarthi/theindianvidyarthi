@@ -5,6 +5,7 @@
 
 html {
     scroll-behavior: smooth;
+    height: 100%;
 }
 
 body {
@@ -12,6 +13,7 @@ body {
     margin: 0px;
     font-family: Poppins;
     font-weight: 300;
+    height: 100%;
 }
 
 body::-webkit-scrollbar {
@@ -86,7 +88,7 @@ body::-webkit-scrollbar {
 
 .titles{
     font-size: larger;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .text{
@@ -102,36 +104,11 @@ body::-webkit-scrollbar {
     width: 100%;
 }
 
-#About-content{
-    display: flex;
-    margin: auto;
-    padding: 0px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-#About > div {
-    color: aliceblue;
-}
-
-#About-left{
-    flex: 1;
+.slideshow{
+    height: 2000px;
+    width: 100%;
     margin: 0px;
-    padding: 100px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    max-width: 1000px;
-}
-
-#About-right{
-    flex: 1;
-    margin: 0px;
-    height: 300px;
-    padding-top: 50px;
-}
-
-#About-right img{
-    height: 200px;
-    width: 200px;
+    max-height: 3000px;
 }
 
 /*Contains Blog part of the page*/
