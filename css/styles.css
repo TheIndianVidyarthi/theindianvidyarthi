@@ -63,6 +63,12 @@ body::-webkit-scrollbar {
 .menu-item a{
     color: black;
     text-decoration: none;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    padding: 30px;
+    margin: -30px;
+    text-align: center;
 }
 .menu-item :hover{
     color: rgb(141, 0, 197);
@@ -114,6 +120,6 @@ body::-webkit-scrollbar {
     width: 100%;
 }
 
-.title{
+/* .title{
     
-}
+} */
