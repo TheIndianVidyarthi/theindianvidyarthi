@@ -3,7 +3,7 @@
     position: relative;
     margin: 0;
     max-width: 100%;
-    max-height: auto;
+    height: auto;
 }
 
 #About-bg-video{
@@ -16,4 +16,34 @@
     margin: 0;
     width: 100%;
     height: auto;
+}
+
+#About-content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Adjust opacity as needed */
+    z-index: 3;
+    color: white;
+    margin-top: 300px;
+    padding: 20px;
+    transition: opacity 0.5s;
+    display: flex;
+}
+
+#About-left{
+    flex: 1;
+    padding-left: 100px;
+    padding-top: 15vh;
+}
+
+#About-right{
+    flex: 1;
+    padding-left: 50px;
+}
+
+#About-right > img{
+    height: 50vh;
+    width: auto;
 }

@@ -13,7 +13,6 @@ body {
     background-color: black;
     margin: 0px;
     font-family: Poppins;
-    font-weight: 300;
     height: 100%;
 }
 
@@ -81,6 +80,7 @@ body::-webkit-scrollbar {
     background: black;
     scroll-snap-type: mandatory;
     margin-top: 60px;
+    z-index: 5;
 }
 
 /*About Section of the page: contains slideshow, text and image*/
@@ -91,6 +91,8 @@ body::-webkit-scrollbar {
 }
 /*Contains Blog part of the page*/
 #Blog {
+    position: relative;
+    top: 90vh;
     background-color: rgb(17, 119, 208);
     height: 600px;
     width: 100%;
@@ -98,19 +100,33 @@ body::-webkit-scrollbar {
 }
 
 #Newsletter {
+    position: relative;
+    top: 90vh;
     background-color: aliceblue;
     height: 600px;
     width: 100%;
 }
 
 #Partners {
+    position: relative;
+    top: 90vh;
     background-color:antiquewhite;
     height: 600px;
     width: 100%;
 }
 
 #Contact {
+    position: relative;
+    top: 90vh;
     background-color:burlywood;
     height: 600px;
     width: 100%;
+}
+
+.titles{
+    font-weight: 600;
+}
+
+.subtitles{
+    font-weight: 100;
 }
