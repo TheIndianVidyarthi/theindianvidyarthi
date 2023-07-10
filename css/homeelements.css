@@ -2,8 +2,8 @@
 #About-bg{
     position: relative;
     margin: 0;
-    max-width: 100%;
-    height: auto;
+    max-height: 100vh;
+    width: auto;
 }
 
 #About-bg-video{
@@ -23,7 +23,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.6); /* Adjust opacity as needed */
+    background-color: rgba(0, 0, 0, 0.8); /* Adjust opacity as needed */
     z-index: 3;
     color: white;
     margin-top: 300px;
@@ -36,14 +36,86 @@
     flex: 1;
     padding-left: 100px;
     padding-top: 15vh;
+    padding-left: 25vh;
 }
 
 #About-right{
     flex: 1;
     padding-left: 50px;
+    padding-right: 25vh;
 }
 
 #About-right > img{
     height: 50vh;
     width: auto;
 }
+
+#Newsletter-content{
+  padding: 20px;
+}
+
+#Newsletter-buttons{
+  display: flex;
+}
+
+.card{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#Newsletter-left{
+  padding: 20px;
+  flex: 0.8;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+
+#Newsletter-right{
+  padding: 20px;
+  flex: 0.2;
+}
+/* For cards in Newsletter */
+.flip-card {
+    background-color: transparent;
+    width: 16.875vh;
+    height: 30vh;
+    border: 1px solid #aa00ed;
+    flex: 1;
+}
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 16.875vh;
+    height: 30vh;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 16.875vh;
+    height: 30vh;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: rgb(158, 0, 220);
+    color: white;
+    transform: rotateY(180deg);
+  }
