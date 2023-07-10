@@ -1,121 +1,119 @@
-/* Style the video: 100% width and height to cover the entire window */
-#About-bg{
-    position: relative;
-    margin: 0;
-    max-height: 100vh;
-    width: auto;
+/* CSS code for styling */
+
+/* Styling for the video background */
+#About-bg {
+  position: relative;                                 /* Set the position of the video background */
+  margin: 0;                                          /* Remove margin from the video background */
+  max-height: 100vh;                                  /* Set the maximum height of the video background to 100 viewport height */
+  width: auto;                                        /* Set the width of the video background to auto */
 }
 
-#About-bg-video{
-    position: relative;
-    z-index: 1;
+#About-bg-video {
+  position: relative;                                 /* Set the position of the video element within the background */
+  z-index: 1;                                         /* Set the z-index of the video element to 1 */
 }
 
 #myVideo {
-    position: absolute;
-    margin: 0;
-    width: 100%;
-    height: auto;
+  position: absolute;                                 /* Set the position of the video element */
+  margin: 0;                                          /* Remove margin from the video element */
+  width: 100%;                                        /* Set the width of the video element to 100% */
+  height: auto;                                       /* Set the height of the video element to auto */
 }
 
-#About-content{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.8); /* Adjust opacity as needed */
-    z-index: 3;
-    color: white;
-    margin-top: 300px;
-    padding: 20px;
-    transition: opacity 0.5s;
-    display: flex;
+#About-content {
+  position: absolute;                                 /* Set the position of the content section within the background */
+  top: 0;                                             /* Position the content section at the top */
+  left: 0;                                            /* Position the content section at the left */
+  width: 100%;                                        /* Set the width of the content section to 100% */
+  background-color: rgba(0, 0, 0, 0.8);             /* Set the background color of the content section with opacity */
+  z-index: 3;                                         /* Set the z-index of the content section to 3 */
+  color: white;                                     /* Set the text color of the content section to white */
+  margin-top: 300px;                                  /* Add top margin to the content section */
+  padding: 20px;                                      /* Add padding to the content section */
+  transition: opacity 0.5s;                           /* Apply transition effect to the opacity property */
+  display: flex;                                      /* Display the content section as a flex container */
 }
 
-#About-left{
-    flex: 1;
-    padding-left: 100px;
-    padding-top: 15vh;
-    padding-left: 25vh;
+#About-left {
+  flex: 1;                                            /* Set the flex property of the left section to 1 */
+  padding-left: 100px;                                /* Add left padding to the left section */
+  padding-top: 15vh;                                  /* Add top padding to the left section */
+  padding-left: 25vh;                                 /* Additional left padding for the left section */
 }
 
-#About-right{
-    flex: 1;
-    padding-left: 50px;
-    padding-right: 25vh;
+#About-right {
+  flex: 1;                                            /* Set the flex property of the right section to 1 */
+  padding-left: 50px;                                 /* Add left padding to the right section */
+  padding-right: 25vh;                                /* Add right padding to the right section */
 }
 
-#About-right > img{
-    height: 50vh;
-    width: auto;
+#About-right > img {
+  height: 50vh;                                       /* Set the height of the image within the right section */
+  width: auto;                                        /* Set the width of the image within the right section to auto */
 }
 
-#Newsletter-content{
-  padding: 20px;
+#Newsletter-content {
+  padding: 20px;                                      /* Add padding to the newsletter content */
 }
 
-#Newsletter-buttons{
-  display: flex;
+#Newsletter-buttons {
+  display: flex;                                      /* Display the newsletter buttons as flex elements */
 }
 
-.card{
-  padding-left: 20px;
-  padding-right: 20px;
+.card {
+  padding-left: 20px;                                 /* Add left padding to the card elements */
+  padding-right: 20px;                                /* Add right padding to the card elements */
 }
 
-#Newsletter-left{
-  padding: 20px;
-  flex: 0.8;
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 5px;
+#Newsletter-left {
+  padding: 20px;                                      /* Add padding to the left section of the newsletter */
+  flex: 0.8;                                          /* Set the flex property of the left section to 0.8 */
+  background-color: rgba(0, 0, 0, 0.5);               /* Set the background color of the left section with opacity */
+  border-radius: 5px;                                 /* Apply border-radius to the left section */
 }
 
-#Newsletter-right{
-  padding: 20px;
-  flex: 0.2;
+#Newsletter-right {
+  padding: 20px;                                      /* Add padding to the right section of the newsletter */
+  flex: 0.2;                                          /* Set the flex property of the right section to 0.2 */
 }
-/* For cards in Newsletter */
+
+/* Styling for the flip cards in the newsletter section */
 .flip-card {
-    background-color: transparent;
-    width: 16.875vh;
-    height: 30vh;
-    border: 1px solid #aa00ed;
-    flex: 1;
+  background-color: transparent;                      /* Set the background color of the flip cards to transparent */
+  width: 16.875vh;                                    /* Set the width of the flip cards */
+  height: 30vh;                                       /* Set the height of the flip cards */
+  border: 1px solid #aa00ed;                          /* Add border to the flip cards */
+  flex: 1;                                            /* Set the flex property of the flip cards to 1 */
 }
-  
-  /* This container is needed to position the front and back side */
-  .flip-card-inner {
-    position: relative;
-    width: 16.875vh;
-    height: 30vh;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-  }
-  
-  /* Do an horizontal flip when you move the mouse over the flip box container */
-  .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-  }
-  
-  /* Position the front and back side */
-  .flip-card-front, .flip-card-back {
-    position: absolute;
-    width: 16.875vh;
-    height: 30vh;
-    -webkit-backface-visibility: hidden; /* Safari */
-    backface-visibility: hidden;
-  }
-  
-  /* Style the front side (fallback if image is missing) */
-  .flip-card-front {
-    background-color: #bbb;
-    color: black;
-  }
-  
-  /* Style the back side */
-  .flip-card-back {
-    background-color: rgb(158, 0, 220);
-    color: white;
-    transform: rotateY(180deg);
-  }
+
+.flip-card-inner {
+  position: relative;                                 /* Set the position of the flip card container */
+  width: 16.875vh;                                    /* Set the width of the flip card container */
+  height: 30vh;                                       /* Set the height of the flip card container */
+  text-align: center;                                 /* Align the content of the flip card container to the center */
+  transition: transform 0.8s;                         /* Apply transition effect to the transform property */
+  transform-style: preserve-3d;                       /* Preserve the 3D transformations of the flip cards */
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);                         /* Apply 3D rotation on hover to flip the card */
+}
+
+.flip-card-front,.flip-card-back {
+  position: absolute;                                 /* Set the position of the flip card sides */
+  width: 16.875vh;                                    /* Set the width of the flip card sides */
+  height: 30vh;                                       /* Set the height of the flip card sides */
+  -webkit-backface-visibility: hidden;                /* Set the visibility of the back face in WebKit browsers */
+  backface-visibility: hidden;                        /* Set the visibility of the back face in other browsers */
+}
+
+.flip-card-front {
+  background-color: #bbb;                             /* Set the background color of the front side */
+  color: black;                                       /* Set the text color of the front side */
+}
+
+.flip-card-back {
+  background-color: rgb(158, 0, 220);                 /* Set the background color of the back side */
+  color: white;                                       /* Set the text color of the back side */
+  transform: rotateY(180deg);                           /* Apply 3D rotation to display the back side */
+}
