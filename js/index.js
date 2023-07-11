@@ -1,3 +1,4 @@
+// for the about page
 window.addEventListener("scroll", function() {
     var overlay = document.getElementById("About-content");
     var videoBackground = document.getElementById("About-bg");
