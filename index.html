@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/homeelements.css">
+    <link rel="stylesheet" href="css/blog.css">
+    <script src="js/index.js"></script>
 </head>
 <body>
     <div class = "nav">
@@ -36,18 +39,155 @@
     </div>
     <div id = "Content">
         <div id = "About">
-            <div class = "">
-                dfjhfsjgj
+            <div id = "About-bg">
+                <div id = "About-bg-video">
+                    <video autoplay muted loop id="myVideo">
+                        <source src="video/bg_vid.mp4" type="video/mp4">
+                    </video>
+                </div> 
+                <div id = "About-content">
+                    <div id = "About-left">
+                        <div class = "titles">
+                            The Indian Vidyarthi
+                        </div>
+                        <div class = "subtitles">
+                            We aim to foster the needs of all the talented Indian Vidyarthis 
+                            and we believe that potential and creative individuals can be 
+                            found everywhere. And dont’t you worry if you are a ‘confused’ 
+                            and ‘still figuring out’ person, we are even a better place for 
+                            you as you can explore our dynamic fields of opportunities and 
+                            venture into different dimensions which catch your keen eyes 
+                            with interest.
+                        </div>
+                    </div>
+                    <div id = "About-right">
+                        <img src = "image/About_pic.jpg" alt = "Indian Vidyarthi">
+                    </div> 
+                </div>
             </div>
         </div>
         <div id = "Blog">
-            <div></div>
+            <div id = "Blog-content">
+                <div class = "titles">
+                    Our Blog
+                </div>
+                <div class = "subtitles">
+                    Aren’t you curious to know what your peers think? 
+                    Well our blogs and articles are a culmination of vibrant 
+                    perspectives of budding writers. 
+                    We like to showcase the imagination of the people and their 
+                    outlook of an eventful world out there. 
+                </div>
+                <div id = "Blog-content1">
+                    <div id = "Blog-content-left">
+                        <div id = "Blog-display">
+                            <div id = "Blog-display-title">
+                                Blog 1 Title
+                            </div>
+                            <div id = "Blog-display-content">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Sed ultrices felis nisi, et lacinia lorem pharetra fringilla.
+                                Aenean imperdiet consectetur nunc, sed ornare orci aliquet id.
+                                Curabitur eget cursus diam. Vestibulum posuere libero sapien, ac sagittis mi tempus quis.
+                                Nunc ullamcorper eleifend justo ultricies iaculis.
+                                <a href = "https://www.google.com">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id = "Blog-content-right">
+                        <div id = "Blog list">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <div id = "Blog-display-title">
+                                            Blog 2 Title
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div id = "Blog-display-title">
+                                            Blog 3 Title
+                                        </div>
+                                </tr>
+                            </table>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div id = "Newsletter">
-
-        </div>
-        <div id = "Aspirants">
-
+            <div id = "Newsletter-content">
+                <div class = "titles">
+                    Our Newsletter
+                </div>
+                <div class = "subtitles">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Sed ultrices felis nisi, et lacinia lorem pharetra fringilla. 
+            </div>
+            <div id = "Newsletter-buttons">
+                <div id = "Newsletter-left">
+                    <table>
+                        <tr> 
+                            <td class = "card">
+                                <a href = "https://www.google.com">
+                                    <div class="flip-card">
+                                        <div class="flip-card-inner">
+                                            <div class="flip-card-front">
+                                                <img src="image/newsletter1.jpeg" alt="May 2023" style="width:16.875vh;height:30vh;">
+                                            </div>
+                                        <div class="flip-card-back">
+                                            <h1>May 2023</h1>
+                                            <p style="font-size: small; font-weight: 300;">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </td>
+                            <td class = "card">
+                                <a href = "https://www.google.com">
+                                    <div class="flip-card">
+                                        <div class="flip-card-inner">
+                                            <div class="flip-card-front">
+                                                <img src="image/newsletter1.jpeg" alt="June 2023" style="width:16.875vh;height:30vh;">
+                                            </div>
+                                        <div class="flip-card-back">
+                                            <h1>June 2023</h1>
+                                            <p style="font-size: small; font-weight: 300;">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </td>
+                            <td class = "card">
+                                <a href = "https://www.google.com">
+                                    <div class="flip-card">
+                                        <div class="flip-card-inner">
+                                            <div class="flip-card-front">
+                                                <img src="image/newsletter1.jpeg" alt="July 2023" style="width:16.875vh;height:30vh;">
+                                            </div>
+                                        <div class="flip-card-back">
+                                            <h1>July 2023</h1>
+                                            <p style="font-size: small; font-weight: 300;">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div id = "Newsletter-right">
+                    <a href = "newsletter.html">
+                        <button class="c-btn" >Read More</button>
+                    </a>
+                </div>
+            </div>
         </div>
         <div id = "Partners">
 

@@ -1,0 +1,11 @@
+#Blog-content1{
+    display: flex;
+}
+
+#Blog-left{
+    flex: 0.3;
+}
+
+#Blog-right{
+    flex: 0.7;
+}

@@ -1,125 +1,140 @@
+/* CSS code for styling */
+
+/* Define custom font */
 @font-face {
     font-family: Poppins;
     src: url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    background-color: black;
-    margin: 0px;
-    font-family: Poppins;
-    font-weight: 300;
-}
-
-body::-webkit-scrollbar {
+  }
+  
+  /* Styling for the HTML element */
+  html {
+    scroll-behavior: smooth;                            /* Enable smooth scrolling behavior */
+    height: 100%;                                       /* Set the height of the HTML element to 100% */
+    scroll-padding-top: 60px;                           /* Add padding to the top to avoid content hiding under the fixed navbar */
+  }
+  
+  /* Styling for the body element */
+  body {
+    background-color: black;                          /* Set the background color of the body to black */
+    margin: 0px;                                        /* Remove margin from the body */
+    font-family: Poppins;                               /* Use the custom Poppins font for the body text */
+    height: 100%;                                       /* Set the height of the body to 100% */
+  }
+  
+  /* Hide the scrollbar for webkit-based browsers */
+  body::-webkit-scrollbar {
     display: none;
+  }
+  
+  /* Styling for the navigation bar */
+  .nav {
+    display: flex;                                      /* Display the navigation bar as a flex container */
+    flex-direction: column;                             /* Set the flex direction to column */
+    flex-wrap: wrap;                                    /* Enable wrapping of flex items */
+    background: white;                                /* Set the background color of the navigation bar to white */
+    position: fixed;                                    /* Position the navigation bar as fixed */
+    height: 60px;                                       /* Set the height of the navigation bar to 60 pixels */
+    width: 100%;                                        /* Set the width of the navigation bar to 100% */
+    top: 0;                                             /* Position the navigation bar at the top */
+    font-weight: 600;                                   /* Set the font weight of the navigation bar text to 600 */
+    font-size: large;                                   /* Set the font size of the navigation bar text to large */
+    overflow: hidden;                                   /* Hide any overflowing content in the navigation bar */
+    z-index: 10;                                        /* Set the z-index of the navigation bar to 10 */
+  }
+  
+  .logo {
+    margin: 0px;                                        /* Remove margin from the logo */
+    padding-left: 20px;                                 /* Add left padding to the logo */
+    padding-top: 20px;                                  /* Add top padding to the logo */
+    max-width: 100px;                                   /* Set the maximum width of the logo to 100 pixels */
+  }
+  
+  .menu {
+    max-width: 1000px;                                  /* Set the maximum width of the menu container to 1000 pixels */
+    margin: auto;                                       /* Center align the menu container */
+    padding-top: 15px;                                  /* Add top padding to the menu container */
+  }
+  
+  .menu-items {
+    list-style-type: none;                              /* Remove the default bullet points from the menu items */
+    margin: auto;                                       /* Center align the menu items */
+    padding-left: 20px;                                 /* Add left padding to the menu items */
+    padding-right: 20px;                                /* Add right padding to the menu items */
+  }
+  
+  .menu-item {
+    float: left;                                        /* Float the menu items to the left */
+    padding-left: 40px;                                 /* Add left padding to the menu items */
+    height: 40px;                                       /* Set the height of the menu items to 40 pixels */
+  }
+  
+  .menu-item a {
+    color: black;                                     /* Set the color of the menu item links to black */
+    text-decoration: none;                              /* Remove the underline from the menu item links */
+  }
+  
+  .menu-item :hover {
+    color: rgb(141, 0, 197);                          /* Change the color of the menu item links on hover */
+  }
+  
+  /* Styling for the content section of the page */
+  #Content {
+    display: flex;                                      /* Display the content section as a flex container */
+    flex-direction: row;                                /* Set the flex direction to row */
+    flex-wrap: wrap;                                    /* Enable wrapping of flex items */
+    background: black;                                /* Set the background color of the content section to black */
+    scroll-snap-type: mandatory;                        /* Enable mandatory scroll snapping for the content section */
+    margin-top: 60px;                                   /* Add top margin to the content section to avoid overlapping with the fixed navbar */
+    z-index: 5;                                         /* Set the z-index of the content section to 5 */
+  }
+  
+  /* Styling for the about section of the page */
+  #About {
+    background-color: rgb(27, 27, 27);                /* Set the background color of the about section */
+    height: 100%;                                       /* Set the height of the about section to 100% */
+    width: 100%;                                        /* Set the width of the about section to 100% */
+  }
+  
+  /* Styling for the blog section of the page */
+  #Blog {
+    position: relative;                                 /* Position the blog section relative to its normal position */
+    top: 90vh;                                          /* Position the blog section 90% of the viewport height from the top */
+    background-color: rgb(175, 175, 175);             /* Set the background color of the blog section */
+    height: 600px;                                      /* Set the height of the blog section to 600 pixels */
+    width: 100%;                                        /* Set the width of the blog section to 100% */
+    margin-top: 260px;                                  /* Add top margin to the blog section to avoid overlapping with other content */
+  }
+  
+  /* Styling for the newsletter section of the page */
+  #Newsletter {
+    position: relative;                                 /* Position the newsletter section relative to its normal position */
+    top: 90vh;                                          /* Position the newsletter section 90% of the viewport height from the top */
+    background-color: rgb(135, 88, 88);               /* Set the background color of the newsletter section */
+    height: 50vh;                                       /* Set the height of the newsletter section to 50% of the viewport height */
+    width: 100%;                                        /* Set the width of the newsletter section to 100% */
+    color: white;                                     /* Set the text color of the newsletter section to white */
+  }
+  
+  /* Styling for the partners section of the page */
+  #Partners {
+    position: relative;                                 /* Position the partners section relative to its normal position */
+    background-color: antiquewhite;                   /* Set the background color of the partners section */
+    height: 600px;                                      /* Set the height of the partners section to 600 pixels */
+    width: 100%;                                        /* Set the width of the partners section to 100% */
+  }
+  
+  /* Styling for the contact section of the page */
+  #Contact {
+    position: relative;                                 /* Position the contact section relative to its normal position */
+    background-color: burlywood;                      /* Set the background color of the contact section */
+    height: 600px;                                      /* Set the height of the contact section to 600 pixels */
+    width: 100%;                                        /* Set the width of the contact section to 100% */
+  }
+  
+  .titles {
+    font-weight: 600;                                   /* Set the font weight of titles to 600*/
+}  
+
+.subtitles {
+    font-weight: 100;                                   /* Set the font weight of subtitles to 100 */
 }
-
-/*Navbar*/
-
-.nav{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    background: white;
-    position: fixed;
-    height: 60px;
-    width: 100%;
-    top: 0;
-    font-weight: 600;
-    font-size: large;
-    overflow: hidden;
-}
-
-.logo{
-    margin: 0px;
-    padding-left: 20px;
-    padding-top: 20px;
-    max-width: 100px;
-}
-
-.menu{
-    max-width: 1000px;
-    margin: auto;
-    padding-top: 15px;
-}
-
-.menu-items{
-    list-style-type: none;
-    margin: auto;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.menu-item{
-    float: left;
-    padding-left: 40px;
-    height: 40px;
-}
-
-.menu-item a{
-    color: black;
-    text-decoration: none;
-    display: inline-block;
-    position: relative;
-    z-index: 1;
-    padding: 30px;
-    margin: -30px;
-    text-align: center;
-}
-.menu-item :hover{
-    color: rgb(141, 0, 197);
-}
-
-/*Content Part of page*/
-
-#Content{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    background: black;
-    scroll-snap-type: mandatory;
-
-}
-
-#Content > div {
-    scroll-margin: 60px 100px;
-}
-
-#About {
-    margin-top: 60px;
-    background-color:antiquewhite;
-    height: 600px;
-    width: 100%;
-}
-
-#Blog {
-    background-color: rgb(17, 119, 208);
-    height: 600px;
-    width: 100%;
-}
-
-#Newsletter {
-    background-color: aliceblue;
-    height: 600px;
-    width: 100%;
-}
-
-#Partners {
-    background-color:antiquewhite;
-    height: 600px;
-    width: 100%;
-}
-
-#Contact {
-    background-color:burlywood;
-    height: 600px;
-    width: 100%;
-}
-
-/* .title{
-    
-} */
