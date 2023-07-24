@@ -23,9 +23,9 @@ body {
     }
 }
 .card {
-    width: 100%;
-    max-width: 300px;
-    min-width: 200px;
+    /* width: 100%; */
+    max-width: 200px;
+    min-width: 150px;
     height: 250px;
     background-color: #625F63;
     margin: 10px;
@@ -109,4 +109,7 @@ body {
     -webkit-text-fill-color: transparent;
     opacity: 1;
     transition: all 0.3s ease;
+}
+.nav .logo{
+    
 }
