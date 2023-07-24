@@ -52,6 +52,34 @@
   width: auto;                                        /* Set the width of the image within the right section to auto */
 }
 
+#Blog-content {
+  padding: 20px;                                      /* Add padding to the newsletter content */
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+#Blog-content1 {
+  display: flex;                                      /* Display the newsletter buttons as flex elements */
+}
+
+#Blog-content-left {
+  padding: 20px;                                      /* Add padding to the left section of the newsletter */
+  flex: 0.8;                                          /* Set the flex property of the left section to 0.8 */
+  background-color: rgba(0, 0, 0, 0.5);               /* Set the background color of the left section with opacity */
+  border-radius: 5px;                                 /* Apply border-radius to the left section */
+}
+
+#Blog-content-right {
+  padding: 20px;                                      /* Add padding to the right section of the newsletter */
+  flex: 0.2;                                          /* Set the flex property of the right section to 0.2 */
+  border-radius: 5px;                                 /* Apply border-radius to the right section */
+  margin: auto;                                       /* Set the margin of the right section to auto */
+}
+
+#Blog-display-title{
+  font-weight: 600;
+}
+
 #Newsletter-content {
   padding: 20px;                                      /* Add padding to the newsletter content */
   opacity: 1;
