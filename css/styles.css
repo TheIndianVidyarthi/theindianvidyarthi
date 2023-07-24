@@ -90,7 +90,7 @@
   
   /* Styling for the about section of the page */
   #About {
-    background-color: rgb(27, 27, 27);                /* Set the background color of the about section */
+    background-color: #caf0f8;                /* Set the background color of the about section */
     height: 100%;                                       /* Set the height of the about section to 100% */
     width: 100%;                                        /* Set the width of the about section to 100% */
   }
@@ -99,7 +99,7 @@
   #Blog {
     position: relative;                                 /* Position the blog section relative to its normal position */
     top: 90vh;                                          /* Position the blog section 90% of the viewport height from the top */
-    background-color: rgb(175, 175, 175);             /* Set the background color of the blog section */
+    background-image: linear-gradient(#caf0f8, #90e0ef);             /* Set the background color of the blog section */
     height: 600px;                                      /* Set the height of the blog section to 600 pixels */
     width: 100%;                                        /* Set the width of the blog section to 100% */
     margin-top: 260px;                                  /* Add top margin to the blog section to avoid overlapping with other content */
@@ -109,7 +109,7 @@
   #Newsletter {
     position: relative;                                 /* Position the newsletter section relative to its normal position */
     top: 90vh;                                          /* Position the newsletter section 90% of the viewport height from the top */
-    background-color: rgb(135, 88, 88);               /* Set the background color of the newsletter section */
+    background-image: linear-gradient(#90e0ef, #00b4d8);               /* Set the background color of the newsletter section */
     height: 50vh;                                       /* Set the height of the newsletter section to 50% of the viewport height */
     width: 100%;                                        /* Set the width of the newsletter section to 100% */
     color: white;                                     /* Set the text color of the newsletter section to white */
@@ -118,7 +118,7 @@
   /* Styling for the partners section of the page */
   #Partners {
     position: relative;                                 /* Position the partners section relative to its normal position */
-    background-color: antiquewhite;                   /* Set the background color of the partners section */
+    background-image: linear-gradient(#00b4d8, #0077b6);                   /* Set the background color of the partners section */
     height: 600px;                                      /* Set the height of the partners section to 600 pixels */
     width: 100%;                                        /* Set the width of the partners section to 100% */
   }
@@ -126,7 +126,7 @@
   /* Styling for the contact section of the page */
   #Contact {
     position: relative;                                 /* Position the contact section relative to its normal position */
-    background-color: burlywood;                      /* Set the background color of the contact section */
+    background-image: linear-gradient(#0077b6, #03045e);                      /* Set the background color of the contact section */
     height: 600px;                                      /* Set the height of the contact section to 600 pixels */
     width: 100%;                                        /* Set the width of the contact section to 100% */
   }
