@@ -38,13 +38,17 @@
   }
   
   .logo {
-    margin: 0px;                                        /* Remove margin from the logo */
+    margin: 0px;                                        /* Remove margin from the logo */                                      /* Remove padding from the logo */
     padding-left: 20px;                                 /* Add left padding to the logo */
-    padding-top: 20px;                                  /* Add top padding to the logo */
     max-width: 100%;                                    /* Set the maximum width of the logo to the div's width */
-    height: auto;                                       /* Allow the logo height to adjust proportionally */
+    height: 60px;                                       /* Allow the logo height to adjust proportionally */
   }
   
+  .logo img{
+    max-width: 100%;                                    /* Set the maximum width of the logo image to the div's width */
+    height: 90%;                                       /* Allow the logo image height to adjust proportionally */
+  }
+
   .menu {
     max-width: 1000px;                                  /* Set the maximum width of the menu container to 1000 pixels */
     margin: auto;                                       /* Center align the menu container */
