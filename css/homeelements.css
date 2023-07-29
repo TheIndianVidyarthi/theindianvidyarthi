@@ -32,7 +32,9 @@
   padding: 20px;                                      /* Add padding to the content section */
   transition: opacity 0.5s;                           /* Apply transition effect to the opacity property */
   display: flex;                                      /* Display the content section as a flex container */
+  opacity: 0;
 }
+
 
 #About-left {
   flex: 1;                                            /* Set the flex property of the left section to 1 */
