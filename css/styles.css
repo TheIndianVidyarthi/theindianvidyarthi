@@ -12,7 +12,8 @@
     background-color: black;                          /* Set the background color of the body to black */
     margin: 0px;                                        /* Remove margin from the body */
     font-family: Poppins;                               /* Use the custom Poppins font for the body text */
-    height: 100%;                                       /* Set the height of the body to 100% */
+    height: 100%;                                    /* Set the height of the body to 100% */
+    overflow-x: hidden;                                 /* Hide the horizontal scrollbar */
   }
   
   /* Hide the scrollbar for webkit-based browsers */
