@@ -7,6 +7,12 @@
 
 .heading{
   color: white;
+  font-size: xx-large;
+}
+
+.Blog-title{
+  font-size: x-large;
+  font-weight: 700;
 }
 
 .Blog {
@@ -34,11 +40,15 @@
     flex: 0;                                            /* Set the flex property of the right section to 1 */
     padding-top: 100px;
     padding-left: 100px;                                 /* Add left padding to the right section */
-    padding-right: calc(200/1536 *100%);                                /* Add right padding to the right section */
+    padding-right: calc(350/1536 *100%);                                /* Add right padding to the right section */
     width: 35%;
   }
   
   .Blog-right > img {
-    height: 100px;                                       /* Set the height of the image within the right section */
+    height: 130px;                                       /* Set the height of the image within the right section */
     width: auto;
+    }
+
+    #more {
+      display: none;
     }
