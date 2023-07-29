@@ -1,4 +1,15 @@
-#Blog1 {
+.Blog-heading{
+  position: absolute;  
+  padding-left: calc(100/1536 *100%);
+  height: 40px;
+  width:100%;
+}
+
+.heading{
+  color: white;
+}
+
+.Blog {
     position: absolute;                                 /* Set the position of the content section within the background */
     top: 0;                                             /* Position the content section at the top */
     left: 0;                                            /* Position the content section at the left */
@@ -6,26 +17,28 @@
     background-color: rgba(0, 0, 0, 0.8);             /* Set the background color of the content section with opacity */
     z-index: 3;                                         /* Set the z-index of the content section to 3 */
     color: white;                                     /* Set the text color of the content section to white */
-    margin-top: 300px;                                  /* Add top margin to the content section */
-    padding: 20px;                                      /* Add padding to the content section */
+    margin-top: calc(100/1536 *100%);                                  /* Add top margin to the content section */
+    padding: calc(20/1536 *100%);                                      /* Add padding to the content section */
     transition: opacity 0.5s;                           /* Apply transition effect to the opacity property */
     display: flex;                                      /* Display the content section as a flex container */
   }
 
-  #Blog1-left {
+  .Blog-left{
     flex: 1;                                            /* Set the flex property of the left section to 1 */
-    padding-left: 100px;                                /* Add left padding to the left section */
-    padding-top: 15vh;                                  /* Add top padding to the left section */
-    padding-left: 25vh;                                 /* Additional left padding for the left section */
+    padding-left: calc(100/1536 *100%);                                /* Add left padding to the left section */
+    padding-top: 100px;                                  /* Add top padding to the left section */
+    width:100%;
   }
 
-  #Blog1-right {
-    flex: 1;                                            /* Set the flex property of the right section to 1 */
-    padding-left: 50px;                                 /* Add left padding to the right section */
-    padding-right: 25vh;                                /* Add right padding to the right section */
+  .Blog-right {
+    flex: 0;                                            /* Set the flex property of the right section to 1 */
+    padding-top: 100px;
+    padding-left: 100px;                                 /* Add left padding to the right section */
+    padding-right: calc(200/1536 *100%);                                /* Add right padding to the right section */
+    width: 35%;
   }
   
-  #Blog1-right > img {
-    height: 50vh;                                       /* Set the height of the image within the right section */
+  .Blog-right > img {
+    height: 100px;                                       /* Set the height of the image within the right section */
     width: auto;
     }
