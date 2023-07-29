@@ -41,7 +41,8 @@
     margin: 0px;                                        /* Remove margin from the logo */
     padding-left: 20px;                                 /* Add left padding to the logo */
     padding-top: 20px;                                  /* Add top padding to the logo */
-    max-width: 100px;                                   /* Set the maximum width of the logo to 100 pixels */
+    max-width: 100%;                                    /* Set the maximum width of the logo to the div's width */
+    height: auto;                                       /* Allow the logo height to adjust proportionally */
   }
   
   .menu {
