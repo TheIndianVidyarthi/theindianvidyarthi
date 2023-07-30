@@ -14,10 +14,11 @@
 }
 
 #myVideo {
-  position: absolute;                                 /* Set the position of the video element */
+  position: absole;                                 /* Set the position of the video element */
   margin: 0;                                          /* Remove margin from the video element */
   width: 100%;                                        /* Set the width of the video element to 100% */
   height: auto;                                       /* Set the height of the video element to auto */
+  
 }
 
 #About-content {

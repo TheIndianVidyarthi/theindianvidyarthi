@@ -6,16 +6,23 @@
     <title>Indian Vidyarthi</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/homeelements.css">
-    <script src="js/index.js"></script>
+
+    <script src="js/index.js defer"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap">
     <link rel="icon" type="image/png" href="image/logo.png">
+
 </head>
 <body>
-    <div class = "nav">
+    <div class = "nav" id="nav">
         <div class = "logo">
             <img src = "https://media.licdn.com/dms/image/C4D0BAQEmRfOpHlHwrw/company-logo_200_200/0/1678087546979?e=1697673600&v=beta&t=Zpwfs6JAhD5JCfAFa81oSQnejXWoWbjW-LtCKQcIeBI" alt = "logo">
         </div>
-        <div class = "menu">
+        <div class="hamburger" id="hamburger">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <div class = "menu" id="menu">
             <ul class = "menu-items">
                 <li class = "menu-item">
                     <a href = "#About">About Us</a>
@@ -39,7 +46,9 @@
                     <a  href = "#Contact">Contact Us</a>
                 </li>
             </ul>
+
         </div>
+
     </div>
     <div class="partitions" id = "Content">
         <div id = "About">
