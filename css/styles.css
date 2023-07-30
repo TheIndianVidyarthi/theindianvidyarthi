@@ -39,7 +39,6 @@
   
   .logo {
     margin: 0px;                                        /* Remove margin from the logo */                                      /* Remove padding from the logo */
-    padding-left: 20px;                                 /* Add left padding to the logo */
     max-width: 100%;                                    /* Set the maximum width of the logo to the div's width */
     height: 60px;                                       /* Allow the logo height to adjust proportionally */
   }
