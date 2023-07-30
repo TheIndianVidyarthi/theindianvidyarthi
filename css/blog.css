@@ -1,11 +1,89 @@
-#Blog-content1{
-    display: flex;
+.Blog-heading{
+  position: absolute;  
+  padding-left: calc(100/1536 *100%);
+  height: 40px;
+  width:100%;
 }
 
-#Blog-left{
-    flex: 0.3;
+.heading{
+  color: white;
+  font-size: xx-large;
 }
 
-#Blog-right{
-    flex: 0.7;
+.Blog-title{
+  font-size: x-large;
+  font-weight: 700;
 }
+
+.Blog-top {
+    position: relative;                                 /* Set the position of the content section within the background */
+    top: 0;                                             /* Position the content section at the top */
+    left: 0;                                            /* Position the content section at the left */
+    width: 100%;                                        /* Set the width of the content section to 100% */
+    background-color: rgba(0, 0, 0, 0.8);             /* Set the background color of the content section with opacity */
+    z-index: 3;                                         /* Set the z-index of the content section to 3 */
+    color: white;                                     /* Set the text color of the content section to white */
+    margin-top: calc(100/1536 *100%);                                  /* Add top margin to the content section */
+    padding: calc(20/1536 *100%);                                      /* Add padding to the content section */
+    transition: opacity 0.5s;                           /* Apply transition effect to the opacity property */
+    display: flex;                                      /* Display the content section as a flex container */
+  }
+
+  .Blog-left{
+    flex: 1;                                            /* Set the flex property of the left section to 1 */
+    padding-left: calc(100/1536 *100%);                                /* Add left padding to the left section */
+    padding-top: 100px;                                  /* Add top padding to the left section */
+    width:100%;
+  }
+
+  .Blog-right {
+    flex: 0;                                            /* Set the flex property of the right section to 1 */
+    padding-top: 100px;
+    padding-left: 100px;                                 /* Add left padding to the right section */
+    padding-right: calc(350/1536 *100%);                                /* Add right padding to the right section */
+    width: 35%;
+  }
+  
+  .Blog-right > img {
+    height: 130px;                                       /* Set the height of the image within the right section */
+    width: auto;
+    }
+
+    #more1 {
+      display: none;
+    }
+
+    #more2 {
+      display: none;
+    }
+
+    #more3 {
+      display: none;
+    }
+
+    .Blog {
+      position: relative;                                 /* Set the position of the content section within the background */
+      top: 0;                                             /* Position the content section at the top */
+      left: 0;                                            /* Position the content section at the left */
+      width: 100%;                                        /* Set the width of the content section to 100% */
+      background-color: rgba(0, 0, 0, 0.8);             /* Set the background color of the content section with opacity */
+      z-index: 3;                                         /* Set the z-index of the content section to 3 */
+      color: white;                                     /* Set the text color of the content section to white */
+      padding-left: calc(20/1536 *100%);                                      /* Add padding to the content section */
+      transition: opacity 0.5s;                           /* Apply transition effect to the opacity property */
+      display: flex;                                      /* Display the content section as a flex container */
+    }
+
+    .btn{
+      background: #1f80e0;
+      height: 25px;
+      padding: 0 10px;
+      color: #fff;
+      border-radius: 5px;
+      border: none;
+      outline: none;
+      text-transform: uppercase;
+      font-weight: 300;
+      font-size: 12px;
+      margin: 0 10px;
+    }
