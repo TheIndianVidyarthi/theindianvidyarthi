@@ -1,0 +1,22 @@
+#Work{
+    z-index: 20;
+}
+
+#Work a{
+    text-decoration: none;
+}
+
+#Work1, #Work2, #Work3{
+    padding: 5%;
+    background-color: aqua;
+    height: 100%;
+    margin-left: 5%;
+}
+
+#Work2{
+    width: 150%;
+}
+
+#Work3{
+    margin-left: 130px;
+}
