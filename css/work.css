@@ -7,16 +7,36 @@
 }
 
 #Work1, #Work2, #Work3{
-    padding: 5%;
+    padding: 3vh 3vw 3vh 3vw;
     background-color: aqua;
-    height: 100%;
-    margin-left: 5%;
+    height: 30vh;
+    margin-top: 3vw;
+    margin-left: 3vw;
+    width: 23.4vw;
+    border-radius: 10px;
+    float: left;
+    position: relative;
+    transition: height 0.5s;
+    -webkit-transition: height 0.5s;
+    text-align: center;
+    overflow: hidden;
+    transition: 0.5s;
 }
 
-#Work2{
-    width: 150%;
+#Work1:hover{
+    height: 40vh;
+    margin: 0px;
+    width: 30vw;
 }
 
-#Work3{
-    margin-left: 130px;
+#Work2:hover{
+    height: 40vh;
+    margin: 0px;
+    width: 30vw;
+}
+
+#Work3:hover{
+    height: 40vh;
+    margin: 0px;
+    width: 30vw;
 }

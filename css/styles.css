@@ -146,7 +146,7 @@
   #Work {
     position: relative;                                 /* Position the blog section relative to its normal position */  
     background-color: rgb(175, 175, 175);             /* Set the background color of the blog section */
-    height: 600px;                                      /* Set the height of the blog section to 600 pixels */
+    height: 50vh;                                      /* Set the height of the blog section to 600 pixels */
     width: 100%;                                        /* Set the width of the blog section to 100% */
     display: flex;
   }
