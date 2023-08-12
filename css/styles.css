@@ -145,7 +145,7 @@
   /* Styling for the blog section of the page */
   #Work {
     position: relative;                                 /* Position the blog section relative to its normal position */  
-    background-color: rgb(175, 175, 175);             /* Set the background color of the blog section */
+    background-color: #39FF14;             /* Set the background color of the blog section */
     height: 50vh;                                      /* Set the height of the blog section to 600 pixels */
     width: 100%;                                        /* Set the width of the blog section to 100% */
     display: flex;
@@ -154,7 +154,7 @@
   /* Styling for the newsletter section of the page */
   #Testimony {
     position: relative;                                 /* Position the newsletter section relative to its normal position */
-    background-color: rgb(135, 88, 88);               /* Set the background color of the newsletter section */
+    background-color: #C04DFF;               /* Set the background color of the newsletter section */
     height: 50vh;                                       /* Set the height of the newsletter section to 50% of the viewport height */
     width: 100%;                                        /* Set the width of the newsletter section to 100% */
     color: white;                                     /* Set the text color of the newsletter section to white */
@@ -162,10 +162,52 @@
   
   /* Styling for the partners section of the page */
   #Partners {
-    position: relative;                                 /* Position the partners section relative to its normal position */
-    background-color: antiquewhite;                   /* Set the background color of the partners section */
-    height: 600px;                                      /* Set the height of the partners section to 600 pixels */
-    width: 100%;                                        /* Set the width of the partners section to 100% */
+    position: relative;
+    background: white;
+    height: 50vh;
+    width: 100%;
+    display:grid;
+    grid-auto-flow: column;
+    place-content: center;
+  }
+  figure{
+    display:grid;
+    border-radius: 1em;
+    overflow: hidden;
+    cursor:pointer;
+  }
+  figure>*{
+    grid-area: 1/1;
+    transition:0.4s;
+  }
+  figure figcaption{
+    display:grid;
+    align-items: end;
+    font-family: Poppins;
+    font-size: 2.3em;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    padding:0.75rem;
+    background:var(--c,#0009);
+    clip-path:inset(0 var(--_i,100%) 0 0);
+    -webkit-mask:
+    linear-gradient(#000 0 0),
+    linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    -webkit-mask-clip: text,pading-box;
+    margin: -1px;
+  }
+  figure:hover figcaption{
+    --_i:0%;
+  }
+  figure:hover img{
+    transform: scale(1.2);
+  }
+  @supports not (-webkit-mask-clip: text) {
+    figure figcaption {
+     -webkit-mask: none;
+     color: #fff;
+    }
   }
   
   /* Styling for the contact section of the page */
