@@ -97,13 +97,17 @@
 
   .menu {
     max-width: 1000px;                                  /* Set the maximum width of the menu container to 1000 pixels */
-    margin: auto;                                       /* Center align the menu container */
+    margin-left: auto;                                       /* Center align the menu items */
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 50px;                                       /* Center align the menu container */
     padding-top: 15px;                                  /* Add top padding to the menu container */
     padding-left: 20%;
   }
   
   .menu-items {
     list-style-type: none;                              /* Remove the default bullet points from the menu items */
+    float: left;   
     margin: auto;                                       /* Center align the menu items */
     padding-left: 20px;                                 /* Add left padding to the menu items */
     padding-right: 20px;                                /* Add right padding to the menu items */
