@@ -174,16 +174,19 @@
     grid-auto-flow: column;
     place-content: center;
   }
+
   figure{
     display:grid;
     border-radius: 1em;
     overflow: hidden;
     cursor:pointer;
   }
+
   figure>*{
     grid-area: 1/1;
     transition:0.4s;
   }
+  
   figure figcaption{
     display:grid;
     align-items: end;
