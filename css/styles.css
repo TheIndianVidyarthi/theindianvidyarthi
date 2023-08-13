@@ -1,99 +1,99 @@
 /* CSS code for styling */
-  
-  /* Styling for the HTML element */
-  html {
-    scroll-behavior: smooth;                            /* Enable smooth scrolling behavior */
-    height: 100%;                                       /* Set the height of the HTML element to 100% */
-    scroll-padding-top: 60px;                           /* Add padding to the top to avoid content hiding under the fixed navbar */
-  }
-  
-  /* Styling for the body element */
-  body {
-    background-color: black;                          /* Set the background color of the body to black */
-    margin: 0px;                                        /* Remove margin from the body */
-    font-family: Poppins;                               /* Use the custom Poppins font for the body text */
 
-    height: 100%;                                       /* Set the height of the body to 100% */
-    overflow-x: hidden;                                 /* Hide the horizontal scrollbar */
+/* Styling for the HTML element */
+html {
+  scroll-behavior: smooth;                            /* Enable smooth scrolling behavior */
+  height: 100%;                                       /* Set the height of the HTML element to 100% */
+  scroll-padding-top: 60px;                           /* Add padding to the top to avoid content hiding under the fixed navbar */
+}
 
-  }
-  
-  /* Hide the scrollbar for webkit-based browsers */
-  body::-webkit-scrollbar {
+/* Styling for the body element */
+body {
+  background-color: black;                          /* Set the background color of the body to black */
+  margin: 0px;                                        /* Remove margin from the body */
+  font-family: Poppins;                               /* Use the custom Poppins font for the body text */
+
+  height: 100%;                                       /* Set the height of the body to 100% */
+  overflow-x: hidden;                                 /* Hide the horizontal scrollbar */
+
+}
+
+/* Hide the scrollbar for webkit-based browsers */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Styling for the navigation bar */
+.nav {
+  display: flex;                                      /* Display the navigation bar as a flex container */
+  flex-direction: row;                                /* Set the flex direction to column */
+  flex-wrap: wrap;                                    /* Enable wrapping of flex items */
+  background: white;                                /* Set the background color of the navigation bar to white */
+  position: fixed;                                    /* Position the navigation bar as fixed */
+  height: 60px;                                       /* Set the height of the navigation bar to 60 pixels */
+  width: 100%;                                        /* Set the width of the navigation bar to 100% */
+  top: 0;                                             /* Position the navigation bar at the top */
+  font-weight: 600;                                   /* Set the font weight of the navigation bar text to 600 */
+  font-size: large;                                   /* Set the font size of the navigation bar text to large */
+  overflow: hidden;                                   /* Hide any overflowing content in the navigation bar */
+  z-index: 30;                                        /* Set the z-index of the navigation bar to 10 */
+}
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+
+}
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+.hamburger{
+  display: none;
+  margin: 10px 10px auto auto;
+}
+
+@media screen and (max-width: 767px){
+  .menu{
     display: none;
-  }
-  
-  /* Styling for the navigation bar */
-  .nav {
-    display: flex;                                      /* Display the navigation bar as a flex container */
-    flex-direction: row;                                /* Set the flex direction to column */
-    flex-wrap: wrap;                                    /* Enable wrapping of flex items */
-    background: white;                                /* Set the background color of the navigation bar to white */
-    position: fixed;                                    /* Position the navigation bar as fixed */
-    height: 60px;                                       /* Set the height of the navigation bar to 60 pixels */
-    width: 100%;                                        /* Set the width of the navigation bar to 100% */
-    top: 0;                                             /* Position the navigation bar at the top */
-    font-weight: 600;                                   /* Set the font weight of the navigation bar text to 600 */
-    font-size: large;                                   /* Set the font size of the navigation bar text to large */
-    overflow: hidden;                                   /* Hide any overflowing content in the navigation bar */
-    z-index: 30;                                        /* Set the z-index of the navigation bar to 10 */
-  }
-  .bar1, .bar2, .bar3 {
-    width: 35px;
-    height: 5px;
-    background-color: #333;
-    margin: 6px 0;
-    transition: 0.4s;
 
   }
-  .change .bar1 {
-    transform: translate(0, 11px) rotate(-45deg);
+  .menu.show{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
   }
-  
-  .change .bar2 {opacity: 0;}
-  
-  .change .bar3 {
-    transform: translate(0, -11px) rotate(45deg);
+  .menu-item{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .nav.show{
+    height: auto;
+
   }
   .hamburger{
-    display: none;
-    margin: 10px 10px auto auto;
+    display: block;
   }
+}
 
-  @media screen and (max-width: 767px){
-    .menu{
-      display: none;
+.logo {
+  margin: 0px;                                        /* Remove margin from the logo */                                      /* Remove padding from the logo */
+  max-width: 100%;                                    /* Set the maximum width of the logo to the div's width */
+  height: 60px;                                       /* Allow the logo height to adjust proportionally */
+}
 
-    }
-    .menu.show{
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-    }
-    .menu-item{
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-    }
-    .nav.show{
-      height: auto;
-
-    }
-    .hamburger{
-      display: block;
-    }
-  }
-  
-  .logo {
-    margin: 0px;                                        /* Remove margin from the logo */                                      /* Remove padding from the logo */
-    max-width: 100%;                                    /* Set the maximum width of the logo to the div's width */
-    height: 60px;                                       /* Allow the logo height to adjust proportionally */
-  }
-  
-  .logo img{
-    max-width: 100%;                                    /* Set the maximum width of the logo image to the div's width */
-    height: 90%;                                       /* Allow the logo image height to adjust proportionally */
-  }
+.logo img{
+  max-width: 100%;                                    /* Set the maximum width of the logo image to the div's width */
+  height: 90%;                                       /* Allow the logo image height to adjust proportionally */
+}
 
   .menu {
     max-width: 1000px;                                  /* Set the maximum width of the menu container to 1000 pixels */
@@ -165,67 +165,19 @@
   }
   
   /* Styling for the partners section of the page */
-  #Partners {
-    position: relative;
-    background: white;
-    height: 50vh;
-    width: 100%;
-    display:grid;
-    grid-auto-flow: column;
-    place-content: center;
-  }
-  figure{
-    display:grid;
-    border-radius: 1em;
-    overflow: hidden;
-    cursor:pointer;
-  }
-  figure>*{
-    grid-area: 1/1;
-    transition:0.4s;
-  }
-  figure figcaption{
-    display:grid;
-    align-items: end;
-    font-family: Poppins;
-    font-size: 2.3em;
-    font-weight: bold;
-    color: rgb(0, 0, 0);
-    padding:0.75rem;
-    background:var(--c,#0009);
-    clip-path:inset(0 var(--_i,100%) 0 0);
-    -webkit-mask:
-    linear-gradient(#000 0 0),
-    linear-gradient(#000 0 0);
-    -webkit-mask-composite: xor;
-    -webkit-mask-clip: text,pading-box;
-    margin: -1px;
-  }
-  figure:hover figcaption{
-    --_i:0%;
-  }
-  figure:hover img{
-    transform: scale(1.2);
-  }
-  @supports not (-webkit-mask-clip: text) {
-    figure figcaption {
-     -webkit-mask: none;
-     color: #fff;
-    }
-  }
-  
-  /* Styling for the contact section of the page */
-  #Contact {
-    position: relative;                                 /* Position the contact section relative to its normal position */
-    background-color: burlywood;                      /* Set the background color of the contact section */
-    height: 600px;                                      /* Set the height of the contact section to 600 pixels */
-    width: 100%;                                        /* Set the width of the contact section to 100% */
-  }
-  
-  .titles {
-    font-weight: 600;                                   /* Set the font weight of titles to 600*/
+#Partners {
+  position: relative;
+  background: white;
+  height: 50vh;
+  width: 100%;
+  display: grid;
+  grid-auto-flow: column;
+  place-content: center;
+  gap: 20px; /* Add spacing between figures */
+}
+.titles {
+  font-weight: 600;                                   /* Set the font weight of titles to 600*/
 }  
-
 .subtitles {
-    font-weight: 100;                                   /* Set the font weight of subtitles to 100 */
+  font-weight: 100;
 }

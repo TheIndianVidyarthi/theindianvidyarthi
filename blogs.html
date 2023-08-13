@@ -8,13 +8,22 @@
     <link rel="stylesheet" href="css/homeelements.css">
     <link rel="stylesheet" href="css/blog.css">
     <link rel="icon" type="image/png" href="image/tiv logo.png"><script src="js/index.js"></script>
-    <script src="js/blog.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap">
+    <!-- Google font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web:400,400i,600,600i,700,700i,900">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800,800i">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <!-- icofont -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionic/1.3.2/css/ionic.css">
+    <!-- carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
 </head>
 <body>
     <div class = "nav">
         <div class = "logo">
-            <img src="image/hor logo.jpg">
+            <a href = "index.html"><img src="image/hor logo.jpg"></a>
         </div>
         <div class = "menu">
             <ul class = "menu-items">
@@ -25,56 +34,72 @@
         </div>
     </div>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <div class = "Blog-top">
-        <div class="Blog-heading">
-            <h1 class="heading">Our Blogs</h1>
+    <section class="blog_section">
+        <div class="container">
+            <div class="blog_content">
+                <div class="owl-carousel owl-theme">
+                    <div class="blog_item">
+                        <div class="blog_image">
+                            <img class="img-fluid" src="https://cdn.pixabay.com/photo/2019/03/10/18/31/hong-kong-4046913_960_720.jpg" alt="images not found">
+                            <span><i class="icon ion-md-create"></i></span>
+                        </div>
+                        <div class="blog_details">
+                            <div class="blog_title">
+                                <h5><a href="#">We are best for any industrial & business solution.</a></h5>
+                            </div>
+                            <ul>
+                                <li><i class="icon ion-md-person"></i>Alexa</li>
+                                <li><i class="icon ion-md-calendar"></i>August 1, 2020</li>
+                            </ul>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem...</p>
+                            <a href="#">Read More<i class="icofont-long-arrow-right"></i></a>
+                        </div>
+                    </div>                        
+                    <div class="blog_item">
+                        <div class="blog_image">
+                            <img class="img-fluid" src="https://cdn.pixabay.com/photo/2015/07/09/22/45/tree-838667_960_720.jpg" alt="images not found">
+                            <span><i class="icon ion-md-create"></i></span>
+                        </div>
+                        <div class="blog_details">
+                            <div class="blog_title">
+                                <h5><a href="#">We are best for any industrial & business solution.</a></h5>
+                            </div>
+                            <ul>
+                                <li><i class="icon ion-md-person"></i>Alexa</li>
+                                <li><i class="icon ion-md-calendar"></i>August 1, 2020</li>
+                            </ul>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem...</p>
+                            <a href="#">Read More<i class="icofont-long-arrow-right"></i></a>
+                        </div>
+                    </div>                        
+                    <div class="blog_item">
+                        <div class="blog_image">
+                            <img class="img-fluid" src="https://cdn.pixabay.com/photo/2015/10/30/20/13/sunrise-1014712_960_720.jpg" alt="images not found">
+                            <span><i class="icon ion-md-create"></i></span>
+                        </div>
+                        <div class="blog_details">
+                            <div class="blog_title">
+                                <h5><a href="#">We are best for any industrial & business solution.</a></h5>
+                            </div>
+                            <ul>
+                                <li><i class="icon ion-md-person"></i>Alexa</li>
+                                <li><i class="icon ion-md-calendar"></i>August 1, 2020</li>
+                            </ul>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem...</p>
+                            <a href="#">Read More<i class="icofont-long-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class = "Blog-left">
-            <div class = "Blog-title">
-                Yeh pehla blog hai
-            </div>
-            <div class = "Blog-subtitles">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots1">...</span>
-                    <span id="more1">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span>
-                </p>
-                <button onclick="myFunction1()" class="btn" id="myBtn1">Read more</button>
-            </div>
-        </div>
-        <div class = "Blog-right">
-            <img src = "image/newsletter1.jpeg" alt = "first blog" id="img1">
-        </div> 
-    </div>
-    <div class = "Blog">
-        <div class = "Blog-left">
-            <div class = "Blog-title">
-                Yeh doosra blog hai
-            </div>
-            <div class = "Blog-subtitles">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots2">...</span>
-                    <span id="more2">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span>
-                </p>
-                <button onclick="myFunction2()" class="btn" id="myBtn2">Read more</button>
-            </div>
-        </div>
-        <div class = "Blog-right">
-            <img src = "image/newsletter1.jpeg" alt = "first blog" id="img2">
-        </div> 
-    </div>
-    <div class = "Blog">
-        <div class = "Blog-left">
-            <div class = "Blog-title">
-                Yeh teesra blog hai
-            </div>
-            <div class = "Blog-subtitles">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots3">...</span>
-                    <span id="more3">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span>
-                </p>
-                <button onclick="myFunction3()" class="btn" id="myBtn3">Read more</button>
-            </div>
-        </div>
-        <div class = "Blog-right">
-            <img src = "image/newsletter1.jpeg" alt = "first blog" id="img3">
-        </div> 
-    </div>
+    </section>
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <!-- bootstrap -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <!-- carousel -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+    <script src="js/blog.js"></script>
 </body>
 </html>
