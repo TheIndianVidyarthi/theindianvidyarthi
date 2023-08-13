@@ -1,19 +1,19 @@
-#Work{
+#Partners{
     z-index: 20;
-    background-color: black;
+    background-color: rgb(132, 144, 255);
 }
 
-#Work a{
+#Partners a{
     text-decoration: none;
 }
 
-#Work1, #Work2, #Work3{
+#Part1, #Part2, #Part3,#Part4{
     padding: 10px;
-    background-color: #FF00AA;
+    background-color: #58d8ff;
     height: 30vh;
-    margin-top: 3vw;
-    margin-left: 3vw;
-    width: 23.4vw;
+    margin-top: 2vw;
+    margin-left: 1vw;
+    width: 20vw;
     border-radius: 10px;
     position: relative;
     transition: height 0.5s;
@@ -22,7 +22,7 @@
     transition: 0.5s;
 }
 
-#Work1 img, #Work2 img, #Work3 img{
+#Part1 img, #Part2 img, #Part3 img,#Part4 img{
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -31,7 +31,7 @@
     opacity: 0.2;
 }
 
-#Work1 h1, #Work2 h1, #Work3 h1{
+#Part1 h1, #Part2 h1, #Part3 h1,#Part4 h1{
     position: absolute;
     top: 35%;
     left: 50%;
@@ -42,7 +42,7 @@
     width: 100%;
 }
 
-#Work1 p, #Work2 p, #Work3 p{
+#Part1 p, #Part2 p, #Part3 p,#Part4 p{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -54,24 +54,12 @@
     transition: 0.5s;
 }
 
-#Work1:hover{
+#Part1:hover, #Part2:hover, #Part3:hover,#Part4:hover{
     height: 40vh;
     margin: 0px;
     width: 30vw;
 }
 
-#Work2:hover{
-    height: 40vh;
-    margin: 0px;
-    width: 30vw;
-}
-
-#Work3:hover{
-    height: 40vh;
-    margin: 0px;
-    width: 30vw;
-}
-
-#Work1:hover img, #Work2:hover img, #Work3:hover img{
+#Part1:hover img, #Part2:hover img, #Part3:hover img,#Part4:hover img{
     opacity: 1;
 }
