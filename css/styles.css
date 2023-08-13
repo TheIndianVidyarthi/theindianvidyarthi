@@ -153,17 +153,7 @@ body::-webkit-scrollbar {
   height: 50vh;                                      /* Set the height of the blog section to 600 pixels */
   width: 100%;                                        /* Set the width of the blog section to 100% */
   display: flex;
-}
-
-/* Styling for the newsletter section of the page */
-#Testimony {
-  position: relative;                                 /* Position the newsletter section relative to its normal position */
-  background-color: #C04DFF;               /* Set the background color of the newsletter section */
-  height: 50vh;                                       /* Set the height of the newsletter section to 50% of the viewport height */
-  width: 100%;                                        /* Set the width of the newsletter section to 100% */
-  color: white;                                     /* Set the text color of the newsletter section to white */
-}
-  
+}  
   /* Styling for the partners section of the page */
 #Partners {
   position: relative;
@@ -175,11 +165,12 @@ body::-webkit-scrollbar {
   place-content: center;
   gap: 20px; /* Add spacing between figures */
 }
-.contact{
+.contact {
   height: 10vh;
   width: 100%;
 }
-.contact-icons{
+
+.contact-icons {
   position: relative;
   background: black;
   height: 7vh;
@@ -190,28 +181,46 @@ body::-webkit-scrollbar {
   align-items: center;
   gap: 20px;
 }
-.contact-icons a{
+
+.contact-icons a {
   text-decoration: none;
   color: white;
 }
-/* Mail Icon */
+
 .contact-icons a:nth-of-type(1):before,
-.contact-icons a:nth-of-type(2):before {
-    content: '\f0e0'; /* Mail Icon Unicode */
-    font-family: FontAwesome;
-    margin-right: 5px; /* Adjust as needed */
+.contact-icons a:nth-of-type(2):before,
+.contact-icons a:nth-of-type(3):before,
+.contact-icons a:nth-of-type(4):before,
+.contact-icons a:nth-of-type(5):before,
+.contact-icons a:nth-of-type(6):before,
+.contact-icons a:nth-of-type(7):before {
+  font-family: FontAwesome;
+  margin-right: 5px;
 }
 
-/* Call Icon */
-.contact-icons a:nth-of-type(3):before,
+.contact-icons a:nth-of-type(1):before,
+.contact-icons a:nth-of-type(2):before {
+  content: '\f0e0'; 
+}
+
+.contact-icons a:nth-of-type(3):before{
+  content: '\f075';
+}
 .contact-icons a:nth-of-type(4):before {
-    content: '\f095'; /* Call Icon Unicode */
-    font-family: FontAwesome;
-    margin-right: 5px; /* Adjust as needed */
+  content: '\f095'; 
+}
+.contact-icons a:nth-of-type(5):before {
+  content: '\f099'; 
+}
+.contact-icons a:nth-of-type(6):before {
+  content: '\f16d'; 
+}
+.contact-icons a:nth-of-type(7):before {
+  content: '\f08c'; 
 }
 .contact-icons a:hover:before {
-  transform: scale(1.2); /* Increase size on hover */
-  color: #ffc107; /* Change color on hover */
+  transform: scale(1.2); 
+  color: #ffc107;
 }
 
 .titles {
