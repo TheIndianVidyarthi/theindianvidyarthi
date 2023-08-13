@@ -7,8 +7,11 @@
     align-items: center;
     text-align: center;
     width: 100%;
+    font-size: 1.8vw;
+    padding-bottom: -10vw;
 }
 #Partners a{
+    padding-top: -19vw;
     text-decoration: none;
 }
 
@@ -16,8 +19,8 @@
     padding: 10px;
     background-color: #58d8ff;
     height: 30vh;
-    margin-top: 2vw;
-    margin-left: 1vw;
+    margin-top: -5vw;
+    margin-left: 3vw;
     width: 20vw;
     border-radius: 10px;
     position: relative;
