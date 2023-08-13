@@ -1,5 +1,6 @@
 #Work{
     z-index: 20;
+    background-color: black;
 }
 
 #Work a{
@@ -7,19 +8,49 @@
 }
 
 #Work1, #Work2, #Work3{
-    padding: 3vh 3vw 3vh 3vw;
-    background-color: aqua;
+    padding: 10px;
+    background-color: #FF00AA;
     height: 30vh;
     margin-top: 3vw;
     margin-left: 3vw;
     width: 23.4vw;
     border-radius: 10px;
-    float: left;
     position: relative;
     transition: height 0.5s;
     -webkit-transition: height 0.5s;
     text-align: center;
-    overflow: hidden;
+    transition: 0.5s;
+}
+
+#Work1 img, #Work2 img, #Work3 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+    z-index: 100;
+    opacity: 0.2;
+}
+
+#Work1 h1, #Work2 h1, #Work3 h1{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    z-index: 200;
+    text-align: center;
+    width: 100%;
+}
+
+#Work1 p, #Work2 p, #Work3 p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    z-index: 200;
+    text-align: center;
+    width: 100%;
     transition: 0.5s;
 }
 
@@ -39,5 +70,9 @@
     height: 40vh;
     margin: 0px;
     width: 30vw;
+}
+
+#Work1:hover img, #Work2:hover img, #Work3:hover img{
+    opacity: 1;
 }
 
