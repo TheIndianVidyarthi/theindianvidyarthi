@@ -140,8 +140,50 @@
             </div></a>
         </div>
         
+        <section id="loading">
+                <div id="loader">
+                  <img src="image/loading.gif" alt="" id = "loader-gif">
+                  <p id="changingText2">Empowering Students for a Bright Future...</p>
+                </div>
+            </section>
+            <script>
+                var loading = document.getElementById("loading");
+                window.addEventListener("load", function () {
+                  loading.style.display = "none";
+                })
+        
+                const loadingLines = [
+                    "Empowering Students for a Bright Future...",
+                    "Connecting Dreams to Opportunities...",
+                    "Loading Up Opportunities for Every Student...",
+                    "Bringing Student Welfare to Your Fingertips...",
+                    "Loading the Bridge to Your Educational Success...",
+                    "Empowering Education, One Loading Bar at a Time...",
+                    "Loading Smiles through Student Support...",
+                    "Fueling Ambitions, Loading Possibilities...",
+                    "Connecting Students to a World of Welfare...",
+                    "Loading Compassion, Empowering Students...",
+                    "Empowering Students to Rise and Shine...",
+                    "Loading the Pathway to Student Well-being...",
+                    "Supporting Students, One Loading Step at a Time...",
+                    "Loading Progress for Every Student's Journey...",
+                    "Fueling Your Education, Loading Success...",
+                    "Empowering Students to Reach New Heights...",
+                    "Loading a Spectrum of Opportunities for Students...",
+                    "Connecting Students with Resources, Loading...",
+                    "Loading Excellence in Student Support...",
+                    "Empowering Students Awaiting Just a Few More Moments..."
+                ];
+        
+                const changingText2 = document.getElementById("changingText2");
+                let currentIndex = 0;
             
-</body>
-</html>
+                function updateText2() {
+                  changingText2.textContent = loadingLines[currentIndex];
+                  currentIndex = (currentIndex + 1) % loadingLines.length;
+                }
+            
+                setInterval(updateText2, 3000); 
+              </script>     
 </body>
 </html>
