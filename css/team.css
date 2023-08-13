@@ -11,6 +11,11 @@ body {
     justify-content: center;
 }
 
+.heading2{
+    padding-top: 20px;
+    justify-content: center;
+}
+
 .content {
     max-width: 1024px;
     width: 100%;
@@ -48,6 +53,8 @@ body {
     transition: all 0.3s ease;
     text-decoration: none;
     margin: 25px;
+    padding-left: 20px;                                 /* Add left padding to the card elements */
+    padding-right: 20px;
 }
 
 .cardtext {
