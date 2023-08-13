@@ -1,29 +1,30 @@
 #Work{
     z-index: 20;
     background-color: black;
-    height: 103vh;
+    height: auto;
 }
 
 #WorkH{
-    background-color: black;
     align-items: center;
     text-align: center;
     width: 100%;
-    font-size: 1.8vw;
-    padding-bottom: -10vw;
+    font-size: 3.5vw;
+    height: auto;
+    padding-bottom: -10vh;
 }
 
 #Work a{
-    padding-top: -19vw;
+    padding-top: -19vh;
     text-decoration: none;
 }
 
 #Work1, #Work2, #Work3{
     padding: 10px;
     background-color: #FF00AA;
-    height: 39vw;
-    margin: 3vw;
     width: 26vw;
+    height: auto;
+    margin: 3vw;
+    margin-top: -1vh;
     border-radius: 10px;
     position: relative;
     transition: height 0.5s;
@@ -65,8 +66,8 @@
 }
 
 #Work1:hover, #Work2:hover, #Work3:hover{
-    height: 42vw;
     width: 28vw;
+    height: auto; 
 }
 
 #Work1:hover img, #Work2:hover img, #Work3:hover img{
