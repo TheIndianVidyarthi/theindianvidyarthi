@@ -1,7 +1,7 @@
 #Work{
     z-index: 20;
     background-color: black;
-    height: 100vh;
+    height: 103vh;
 }
 
 #WorkH{
@@ -9,9 +9,12 @@
     align-items: center;
     text-align: center;
     width: 100%;
+    font-size: 1.8vw;
+    padding-bottom: -10vw;
 }
 
 #Work a{
+    padding-top: -19vw;
     text-decoration: none;
 }
 
@@ -19,9 +22,7 @@
     padding: 10px;
     background-color: #FF00AA;
     height: 39vw;
-    margin-top: 3vw;
-    margin-left: 3vw;
-    margin-right: 3vw;
+    margin: 3vw;
     width: 26vw;
     border-radius: 10px;
     position: relative;
@@ -65,7 +66,6 @@
 
 #Work1:hover, #Work2:hover, #Work3:hover{
     height: 42vw;
-    margin: 0px;
     width: 28vw;
 }
 
