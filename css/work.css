@@ -1,6 +1,14 @@
 #Work{
     z-index: 20;
-    background-color: rgb(132, 144, 255);
+    background-color: black;
+    height: 100vh;
+}
+
+#WorkH{
+    background-color: black;
+    align-items: center;
+    text-align: center;
+    width: 100%;
 }
 
 #Work a{
@@ -10,10 +18,11 @@
 #Work1, #Work2, #Work3{
     padding: 10px;
     background-color: #FF00AA;
-    height: 30vh;
+    height: 39vw;
     margin-top: 3vw;
     margin-left: 3vw;
-    width: 23.4vw;
+    margin-right: 3vw;
+    width: 26vw;
     border-radius: 10px;
     position: relative;
     transition: height 0.5s;
@@ -55,9 +64,9 @@
 }
 
 #Work1:hover, #Work2:hover, #Work3:hover{
-    height: 40vh;
+    height: 42vw;
     margin: 0px;
-    width: 30vw;
+    width: 28vw;
 }
 
 #Work1:hover img, #Work2:hover img, #Work3:hover img{
