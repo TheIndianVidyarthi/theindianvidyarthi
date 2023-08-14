@@ -19,7 +19,6 @@
     padding: 10px;
     background-color: #58d8ff;
     height: 30vh;
-    margin-top: -3vw;
     margin-left: 2vw;
     width: 20vw;
     border-radius: 10px;
@@ -28,6 +27,8 @@
     -webkit-transition: height 0.5s;
     text-align: center;
     transition: 0.5s;
+    margin: 2rem auto 2rem auto;
+    
 }
 
 #Part1 img, #Part2 img, #Part3 img,#Part4 img{
@@ -62,12 +63,32 @@
     transition: 0.5s;
 }
 
-#Part1:hover, #Part2:hover, #Part3:hover,#Part4:hover{
-    height: 40vh;
-    margin: 0px;
-    width: 30vw;
+@media screen and (min-width: 767px){
+
+    #Part1:hover, #Part2:hover, #Part3:hover,#Part4:hover{
+        height: 40vh;
+        margin: 0px;
+        width: 30vw;
+    }
+    
+    #Part1:hover img, #Part2:hover img, #Part3:hover img,#Part4:hover img{
+        opacity: 1;
+    }
 }
 
-#Part1:hover img, #Part2:hover img, #Part3:hover img,#Part4:hover img{
-    opacity: 1;
+
+@media screen and (max-width: 767px) {
+
+    #PartnersH{
+        font-size: 3.5vw;
+    }
+    #Part1, #Part2, #Part3,#Part4{
+        width: 85vw;
+        height: 20vh;
+        margin: 2px auto;
+    }
+    #Partners{
+        grid-template-columns: 1fr;
+        gap:1px
+    }
 }
