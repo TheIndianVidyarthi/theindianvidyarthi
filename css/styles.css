@@ -193,7 +193,7 @@ body::-webkit-scrollbar {
     margin-right: 15px;
   }
   body.show{
-    overflow: hidden;
+    position: fixed;
     
   }
 }
