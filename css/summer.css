@@ -104,7 +104,7 @@
     object-fit: cover;
     border-radius: 10px;
     transition: 0.5s;
-    opacity: 0.5;
+    opacity: 0.8;
     position: static;
 }
 
