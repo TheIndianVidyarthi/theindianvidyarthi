@@ -197,6 +197,9 @@ body::-webkit-scrollbar {
   body.show{
     position: fixed;    
   }
+  .dropdown-content{
+    right : 24vw;
+  }
 }
 .dropdown-content #off{
   background-color: #3333333b;
