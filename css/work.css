@@ -73,3 +73,14 @@
 #Work1:hover img, #Work2:hover img, #Work3:hover img{
     opacity: 1;
 }
+
+@media screen and (max-width: 767px){
+    #Work{
+      flex-direction: column;
+      align-items: center;
+    }
+    #Work1, #Work2, #Work3{
+        width: 50%;
+    }
+  }
+  

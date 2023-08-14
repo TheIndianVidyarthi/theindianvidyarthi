@@ -36,7 +36,6 @@ body::-webkit-scrollbar {
   top: 0;                                             /* Position the navigation bar at the top */
   font-weight: 600;                                   /* Set the font weight of the navigation bar text to 600 */
   font-size: large;                                   /* Set the font size of the navigation bar text to large */
-                                     /* Hide any overflowing content in the navigation bar */
   z-index: 30;                                        /* Set the z-index of the navigation bar to 10 */
 }
 .bar1, .bar2, .bar3 {
