@@ -7,7 +7,7 @@ body {
 }
 
 .heading{
-    padding-top: 75px;
+    padding-top: 50px;
     justify-content: center;
 }
 
@@ -27,12 +27,7 @@ body {
     align-items: center;
     text-decoration: none;
 }
-@media screen and (max-width: 767px) {
-    .content {
-       padding-top: 300px;
-       flex-direction: column;
-    }
-}
+
 .card {
     /* width: 100%; */
     width: 150px;
@@ -131,4 +126,21 @@ body {
     transition: all 0.3s ease;
     opacity: 1;
     max-height:40px;
+}
+@media screen and (max-width: 767px) {
+    .content {
+       padding-top: 80px;
+       flex-direction: column;
+       width: 90%;
+    }
+    .card {
+        margin: 35px auto;
+    }
+    .card:hover {
+        height: 270px;
+    }
+    .card:hover .text {
+        opacity: 1;
+        max-height:40px;
+    }
 }

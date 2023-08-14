@@ -19,13 +19,3 @@ function scroll() {
 window.addEventListener("scroll", scroll);
 
 
-const icon = document.getElementById("hamburger")
-const menu = document.getElementById("menu")
-const nav = document.getElementById("nav")
-console.log(icon)
-icon.addEventListener("click",()=>{
-  menu.classList.toggle('show')
-  nav.classList.toggle('show')
-  icon.classList.toggle("change");
-
-})

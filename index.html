@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css"> -->
     <link rel="icon" type="image/png" href="image/tiv logo.png">
+    <script src="js/navbar.js" defer></script>
     <script src="js/index.js" defer></script>
 </head>
 <body>
@@ -27,22 +28,30 @@
         <div class = "menu" id="menu">
             <ul class = "menu-items">
                 <li class = "menu-item">
-                    <a href = "#About">About Us</a>
-                </li>
-                <li class="menu-item">
-                    <a href = "blogs.html">Our Blog</a>
+                    <a href = "#About" onclick="menuToggle()">About Us</a>
                 </li>
                 <li class = "menu-item">
-                    <a href = "newsletter.html">Newsletter</a>
+                <div class="dropdown">
+                    <a class="dropbtn">Dropdown
+                      <i class="fa fa-caret-down"></i>
+                    </a>
+                    <div class="dropdown-content">
+                        
+                        <a href = "https://drive.google.com/file/d/1Gf4yApIHI7Yv4LqLFg0BYH9Co0u_x-B-/view" onclick="menuToggle()" >Newsletter</a>
+                        <a  href = "summer.html" onclick="menuToggle()">Summer Internship</a>
+                    </div>
+                  </div>
+                </li>
+                <li  class = "menu-item">
+                    <a href = "blogs.html" onclick="menuToggle()">Our Blog</a>
                 </li>
                 <li class = "menu-item">
-                    <a  href = "summer.html">Summer Internship</a>
+                    <a href = "team.html" onclick="menuToggle()">Our Team</a>
+                <li class = "menu-item">
+                    <a href = "#PartnersH" onclick="menuToggle()">Our Partners</a>
                 </li>
                 <li class = "menu-item">
-                    <a href = "#PartnersH">Our Partners</a>
-                </li>
-                <li class = "menu-item">
-                    <a  href = "#contactH">Contact Us</a>
+                    <a  href = "#contactH" onclick="menuToggle()">Contact Us</a>
                 </li>
             </ul>
 
@@ -88,21 +97,21 @@
         </div>
         <div class="partitions" id = "Work">
             <a href = "#Work">
-                <div id = "Work1">
+                <div id = "Work1" class="work-content">
                     <img src="image/aspirant.png" alt="">
                     <h1>Aspirants Network</h1>
                     <p>Coming Soon!</p>
                 </div>
             </a>
             <a href = "newsletter.html">
-                <div id = "Work2" >
+                <div id = "Work2" class="work-content">
                     <img src="image/Newsletter.jpg">
                     <h1>Newsletter</h1>
                     <p>Text aayega yahan pe</p>
                 </div>
             </a>
             <a href = "summer.html">
-                <div id = "Work3">
+                <div id = "Work3" class="work-content">
                     <img src="image/Summer Program.jpg" alt="">
                     <h1>Summer Program</h1>
                     <p>Text aayega yahan pe</p>
