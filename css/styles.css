@@ -27,6 +27,7 @@ body::-webkit-scrollbar {
 .nav {
   display: flex;                                      /* Display the navigation bar as a flex container */
   flex-direction: row;                                /* Set the flex direction to column */
+  justify-items: auto;                       /* Set the flex items to be spaced evenly */
   flex-wrap: wrap;                                    /* Enable wrapping of flex items */
   background: white;                                /* Set the background color of the navigation bar to white */
   position: fixed;                                    /* Position the navigation bar as fixed */
@@ -35,7 +36,7 @@ body::-webkit-scrollbar {
   top: 0;                                             /* Position the navigation bar at the top */
   font-weight: 600;                                   /* Set the font weight of the navigation bar text to 600 */
   font-size: large;                                   /* Set the font size of the navigation bar text to large */
-  overflow: hidden;                                   /* Hide any overflowing content in the navigation bar */
+                                     /* Hide any overflowing content in the navigation bar */
   z-index: 30;                                        /* Set the z-index of the navigation bar to 10 */
 }
 .bar1, .bar2, .bar3 {
@@ -57,32 +58,11 @@ body::-webkit-scrollbar {
 }
 .hamburger{
   display: none;
-  margin: 10px 10px auto auto;
+  margin: 10px 10px 10px auto;
+  max-height: 60px;
 }
 
-@media screen and (max-width: 767px){
-  .menu{
-    display: none;
 
-  }
-  .menu.show{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-  .menu-item{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-  .nav.show{
-    height: auto;
-
-  }
-  .hamburger{
-    display: block;
-  }
-}
 
 .logo {
   margin: 0px;                                        /* Remove margin from the logo */                                      /* Remove padding from the logo */
@@ -102,7 +82,7 @@ body::-webkit-scrollbar {
   margin-bottom: auto;
   margin-right: 50px;                                       /* Center align the menu container */
   padding-top: 15px;                                  /* Add top padding to the menu container */
-  padding-left: 20%;
+
 }
 
 .menu-items {
@@ -127,6 +107,98 @@ body::-webkit-scrollbar {
 .menu-item :hover {
   color: rgb(141, 0, 197);                          /* Change the color of the menu item links on hover */
 }
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+/* .navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+} */
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 100;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+@media screen and (max-width: 767px){
+  .menu{
+    display: none;
+  }
+  .menu.show{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+  .menu-items{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    margin: 20px auto auto auto;
+  }
+  .menu-item{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+  }
+  .nav.show{
+    height: 100vh;
+
+  }
+  .hamburger{
+    display: block;
+    max-height: 60px;
+    margin-right: 15px;
+  }
+  body.show{
+    overflow: hidden;
+    
+  }
+}
+
 
 /* Styling for the content section of the page */
 #Content {
