@@ -84,7 +84,8 @@
     margin-top: 30px;
     width: 80vw;
     margin-left: 10vw;
-    height: 40vh;
+    height: auto;
+    align-items: center;
 }
 
 #content-description{
@@ -98,12 +99,13 @@
 
 #content-img{
     margin: 20px;
-    width: 50vw;
-    height: 50vh;
+    width: 40vw;
+    min-height: 40vh;
     object-fit: cover;
     border-radius: 10px;
     transition: 0.5s;
-    opacity: 0.5;
+    opacity: 0.8;
+    position: static;
 }
 
 #testimonials-heading{
@@ -195,5 +197,45 @@ figure.snip1192 .author h5 span {
   font-weight: 400;
   text-transform: none;
   display: block;
+}
+
+@media only screen and (max-width: 767px) {
+  #content-stats{
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+    justify-content: space-between;
+    }
+  .stat{
+    width: 90vw;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px;
+  }
+  .stat h1{
+    padding: 10px;
+  }
+  #summer-description{
+    flex-direction: column;
+    height: 80vh;
+    width: 100%;
+    margin-left: 0px;
+  }
+  #testimonials{
+    flex-direction: column;
+    align-items: center;
+  }
+  #content-img{
+    min-width: 80vw;
+    height: 40vh;
+  }
+  #content-description{
+    width: 80vw;
+    padding: 20px;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+  }
+
 }
 

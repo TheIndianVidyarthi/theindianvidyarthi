@@ -14,7 +14,7 @@
 }
 
 #myVideo {
-  position: absole;                                 /* Set the position of the video element */
+  position: relative;                                 /* Set the position of the video element */
   margin: 0;                                          /* Remove margin from the video element */
   width: 100vw;                                        /* Set the width of the video element to 100% */
   height: auto;                                       /* Set the height of the video element to auto */
@@ -33,7 +33,7 @@
   position: absolute;                                 /* Set the position of the content section within the background */
   top: 0;                                             /* Position the content section at the top */
   left: 0;                                            /* Position the content section at the left */
-  width: 100%;                                        /* Set the width of the content section to 100% */
+  width: 100vw;                                        /* Set the width of the content section to 100% */
   background-color: rgba(0, 0, 0);             /* Set the background color of the content section with opacity */
   z-index: 3;                                         /* Set the z-index of the content section to 3 */
   color: white;                                     /* Set the text color of the content section to white */
@@ -179,4 +179,75 @@
   background-color: #ff8c00;
   cursor: pointer;
   font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+  #Intro{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
+  }
+  
+  #myVideo {
+    margin: 0;
+    height: 100vh; 
+    width: auto;
+  }
+
+  #About{
+    height: 100vh;
+    width: auto;
+  }
+
+  #About-bg{
+    height: 100vh;
+    width: auto;
+  }
+
+  #About-bg-video{
+    display: none;
+  }
+
+  #About-content{
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+    padding: 0px;
+    max-width: 200vh;
+    background-color: rgba(0, 0, 0,0.9);
+    margin: 0;
+    position: relative;
+  }
+
+  #About-left{
+    padding: 30px;
+    max-height: 30vh;
+    width: auto;
+    margin: 0px;
+  }
+
+  .titles{
+    font-size: 20px;
+  }
+
+  .subtitles{
+    font-size: 14px;
+  }
+
+  #About-right{
+    height: 70vh;
+    width: 100vw;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+  }
+
+  #logo_vid{
+    max-width: 100vw;
+    height: 50vh;
+  }
+
 }

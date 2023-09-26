@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css"> -->
     <link rel="icon" type="image/png" href="image/tiv logo.png">
+    <script src="js/navbar.js" defer></script>
     <script src="js/index.js" defer></script>
 </head>
 <body>
@@ -27,22 +28,30 @@
         <div class = "menu" id="menu">
             <ul class = "menu-items">
                 <li class = "menu-item">
-                    <a href = "#About">About Us</a>
-                </li>
-                <li class="menu-item">
-                    <a href = "blogs.html">Our Blog</a>
+                    <a href = "#About" onclick="menuToggle()">About Us</a>
                 </li>
                 <li class = "menu-item">
-                    <a href = "newsletter.html">Newsletter</a>
+                <div class="dropdown">
+                    <a class="dropbtn">Our Work
+                      <i class="fa fa-caret-down"></i>
+                    </a>
+                    <div class="dropdown-content">                        
+                        <a href = "https://drive.google.com/file/d/1Gf4yApIHI7Yv4LqLFg0BYH9Co0u_x-B-/view" onclick="menuToggle()" >Newsletter</a>
+                        <a  href = "summer.html" onclick="menuToggle()">Summer Internship</a>
+                        <a id="off">Aspirants Network</a>
+                    </div>
+                  </div>
+                </li>
+                <li  class = "menu-item">
+                    <a href = "blogs.html" onclick="menuToggle()">Our Blog</a>
                 </li>
                 <li class = "menu-item">
-                    <a  href = "summer.html">Summer Internship</a>
+                    <a href = "team.html" onclick="menuToggle()">Our Team</a>
+                <li class = "menu-item">
+                    <a href = "#PartnersH" onclick="menuToggle()">Our Partners</a>
                 </li>
                 <li class = "menu-item">
-                    <a href = "#PartnersH">Our Partners</a>
-                </li>
-                <li class = "menu-item">
-                    <a  href = "#contactH">Contact Us</a>
+                    <a  href = "#contactH" onclick="menuToggle()">Contact Us</a>
                 </li>
             </ul>
 
@@ -51,7 +60,9 @@
     </div>
     <div class="partitions" id = "Content">
         <div class = "partitions", id = "Intro">
-            <img id="myVideo" src="video/TIVHome.gif"/>
+            <video autoplay muted loop id="myVideo">
+                <source src="video/TIVHome.mp4" type="video/mp4">
+            </video>
         </div>
         <div id = "About">
             <div id = "About-bg">
@@ -88,24 +99,24 @@
         </div>
         <div class="partitions" id = "Work">
             <a href = "#Work">
-                <div id = "Work1">
+                <div id = "Work1" class="work-content">
                     <img src="image/aspirant.png" alt="">
                     <h1>Aspirants Network</h1>
                     <p>Coming Soon!</p>
                 </div>
             </a>
-            <a href = "newsletter.html">
-                <div id = "Work2" >
+            <a href = "https://drive.google.com/file/d/1Gf4yApIHI7Yv4LqLFg0BYH9Co0u_x-B-/view">
+                <div id = "Work2" class="work-content">
                     <img src="image/Newsletter.jpg">
                     <h1>Newsletter</h1>
-                    <p>Text aayega yahan pe</p>
+                    <p>Read the latest edition of our Newsletter</p>
                 </div>
             </a>
             <a href = "summer.html">
-                <div id = "Work3">
+                <div id = "Work3" class="work-content">
                     <img src="image/Summer Program.jpg" alt="">
                     <h1>Summer Program</h1>
-                    <p>Text aayega yahan pe</p>
+                    <p>Door to relevant and well-organized information</p>
                 </div>
             </a>
         </div>
@@ -113,92 +124,80 @@
             <h1 class="heading" style="color: white;"><center>Our Partners</center></h1>
         </div>
         <div class="partitions" id = "Partners">
-            <a href = "">
+            <a href = "https://www.instagram.com/studomatrix/">
                 <div id = "Part1">
-                    <img src="image/newsletter1.jpg" alt="">
-                    <h1>Partner 1</h1>
-                    <p>boo</p>
+                    <img src="image/partners/partners1.jpg" alt="">
+                    <h1>Studomatrix</h1>
                 </div>
             </a>
-            <a href = "newsletter.html">
+            <a href = "https://www.instagram.com/projectnavrasa/">
                 <div id = "Part2" >
-                    <img src="image/newsletter1.jpg">
-                    <h1>Partner 2</h1>
-                    <p>boo</p>
+                    <img src="image/partners/partners2.jpg">
+                    <h1>Project Navrasa</h1>
                 </div>
             </a>
-            <a href = "">
+            <a href = "https://www.instagram.com/thevoicesofworld/">
                 <div id = "Part3">
-                    <img src="image/newsletter1.jpg" alt="">
-                    <h1>Partner 3</h1>
-                    <p>boo</p>
+                    <img src="image/partners/partners3.jpg" alt="">
+                    <h1>VOW</h1>
                 </div>
             </a>
-            <a href = "">
+            <a href = "https://www.instagram.com/voiceyourvichaar/">
                 <div id = "Part4">
-                    <img src="image/newsletter1.jpg" alt="">
-                    <h1>Partner 4</h1>
-                    <p>boo</p>
+                    <img src="image/partners/partners4.jpg" alt="">
+                    <h1>Voice Your Vishaar</h1>
                 </div>
             </a>
         </div>
         <div class="partitions" id = "Partners">
-            <a href = "">
+            <a href = "https://www.instagram.com/vorfreudeorganisation/">
                 <div id = "Part1">
-                    <img src="image/newsletter1.jpg" alt="">
-                    <h1>Partner 5</h1>
-                    <p>boo</p>
+                    <img src="image/partners/partners5.jpg" alt="">
+                    <h1>Vorfruede</h1>
                 </div>
             </a>
-            <a href = "newsletter.html">
+            <a href = "https://www.instagram.com/supernova.teens/">
                 <div id = "Part2" >
-                    <img src="image/newsletter1.jpg">
-                    <h1>Partner 6</h1>
-                    <p>boo</p>
+                    <img src="image/partners/partners6.jpg">
+                    <h1>Nova</h1>
                 </div>
             </a>
-            <a href = "">
+            <a href = "https://www.instagram.com/the.soft.move/">
                 <div id = "Part3">
-                    <img src="image/newsletter1.jpg" alt="">
-                    <h1>Partner 7</h1>
-                    <p>boo</p>
+                    <img src="image/partners/partners7.jpg" alt="">
+                    <h1>Soft Movement</h1>
                 </div>
             </a>
             <a href = "">
                 <div id = "Part4">
-                    <img src="image/newsletter1.jpg" alt="">
-                    <h1>Partner 8</h1>
-                    <p>boo</p>
+                    <img src="image/partners/partners8.jpg" alt="">
+                    <h1>Ayika</h1>
                 </div>
             </a>
         </div>
         <div class="partitions" id = "Partners">
-            <a href = "">
+            <a href = "https://instagram.com/theindianvidyarthi?igshid=MzRlODBiNWFlZA==">
                 <div id = "Part1">
-                    <img src="image/newsletter1.jpg" alt="">
-                    <h1>Partner 9</h1>
-                    <p>boo</p>
+                    <img src="image/partners/partners9.jpg" alt="">
+                    <h1>Indigenous Neo</h1>
                 </div>
             </a>
-            <a href = "newsletter.html">
+            <a href = "https://www.instagram.com/paragon_mun/">
                 <div id = "Part2" >
-                    <img src="image/newsletter1.jpg">
-                    <h1>Partner 10</h1>
-                    <p>boo</p>
+                    <img src="image/partners/partners10.jpg">
+                    <h1>Paragon MUN</h1>
                 </div>
             </a>
-            <a href = "">
+            <a href = "https://www.instagram.com/youthify.in/">
                 <div id = "Part3">
-                    <img src="image/newsletter1.jpg" alt="">
-                    <h1>Partner 11</h1>
-                    <p>bies</p>
+                    <img src="image/partners/partners11.jpg" alt="">
+                    <h1>Youthify</h1>
                 </div>
             </a>
-            <a href = "">
+            <a href = "https://www.instagram.com/project.antigone/">
                 <div id = "Part4">
-                    <img src="image/newsletter1.jpg" alt="">
-                    <h1>Partner 12</h1>
-                    <p>I'm Batman!</p>
+                    <img src="image/partners/partners12.jpg" alt="">
+                    <h1>Project Antigone</h1>
                 </div>
             </a>
         </div>
