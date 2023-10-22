@@ -92,7 +92,10 @@
         gap:1px
     }
     #Part1 img, #Part2 img, #Part3 img,#Part4 img{
-        opacity: 0.7;
+        opacity: 1;
+    }
+    #Part1 h1, #Part2 h1, #Part3 h1,#Part4 h1{
+        display: none;
     }
     
 }
