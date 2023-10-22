@@ -91,4 +91,8 @@
         grid-template-columns: 1fr;
         gap:1px
     }
+    #Part1 img, #Part2 img, #Part3 img,#Part4 img{
+        opacity: 1;
+    }
+    
 }
