@@ -34,8 +34,8 @@ body::-webkit-scrollbar {
   height: 60px;                                       /* Set the height of the navigation bar to 60 pixels */
   width: 100%;                                        /* Set the width of the navigation bar to 100% */
   top: 0;                                             /* Position the navigation bar at the top */
-  font-weight: 600;                                   /* Set the font weight of the navigation bar text to 600 */
-  font-size: large;                                   /* Set the font size of the navigation bar text to large */
+  font-weight: 400;                                   /* Set the font weight of the navigation bar text to 600 */
+  font-size: 16px;                                   /* Set the font size of the navigation bar text to large */
   z-index: 30;                                        /* Set the z-index of the navigation bar to 10 */
   align-items: center;
 }
@@ -89,13 +89,13 @@ body::-webkit-scrollbar {
   list-style-type: none;                              /* Remove the default bullet points from the menu items */
   float: left;   
   margin: auto;                                       /* Center align the menu items */
-  padding-left: 10px;                                 /* Add left padding to the menu items */
-  padding-right: 10px;                                /* Add right padding to the menu items */
+  padding-left: 5px;                                 /* Add left padding to the menu items */
+  padding-right: 5px;                                /* Add right padding to the menu items */
 }
 
 .menu-item {
   float: left;                                        /* Float the menu items to the left */
-  padding-left: 40px;                                 /* Add left padding to the menu items */
+  padding-left: 20px;                                 /* Add left padding to the menu items */
   height: 40px;                                       /* Set the height of the menu items to 40 pixels */
 }
 

@@ -1,11 +1,27 @@
 body {
     width: 100vw;
-    background-image: url("../image/aboutBG.jpg");
+    /* background-image: url("../image/aboutBG.jpg"); */
     margin: 0;
     font-family: helvetica;
     text-decoration: none;
 }
-
+.demo-wrap {
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .demo-bg {
+    opacity: 0.6;
+    position: absolute;
+    left: 0;
+    top: 0;
+    /* width: 100%; */
+    height: 400vh;
+  }
+  
+  .demo-content {
+    position: relative;
+  }
 .heading{
     padding-top: 50px;
     justify-content: center;
