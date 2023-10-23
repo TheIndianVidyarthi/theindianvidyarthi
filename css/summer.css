@@ -36,6 +36,23 @@
     text-align: center;
 }
 
+.demo-bg {
+  opacity: 0.4;
+  position: absolute;
+  left: 0;
+  top: 0;
+  min-width: 100vw;
+  max-height: 100%; /* Set max-height to 100% */
+  z-index: 0;
+}
+
+#contents {
+  z-index: 10;
+  overflow: hidden;
+  height: auto;
+  opacity: 1;
+}
+
 .stat h1{
     font-weight: 700;
     font-size: 30px;
