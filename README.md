@@ -10,6 +10,6 @@ This project was made to create a link between TIV and their audience (the stude
 ![image](https://github.com/tarush10000/theindianvidyarthi/assets/62472697/bdaba3e3-01ec-4b96-93e0-e207176ebdf1)
 ![image](https://github.com/tarush10000/theindianvidyarthi/assets/62472697/baa52ae0-9b3a-40e5-a54a-02c0f800cd25)
 ### Blog Page
-![image](https://github.com/tarush10000/theindianvidyarthi/assets/62472697/12ec6bdf-01ea-4f17-b816-aea2ee5c539b)
+![image](https://github.com/tarush10000/theindianvidyarthi/assets/62472697/6c8113ce-c886-44fd-966b-81113e680749)
 ### Our Team
 ![image](https://github.com/tarush10000/theindianvidyarthi/assets/62472697/6614bbaa-48a2-4da6-9f4c-dd6404cc9f0a)
