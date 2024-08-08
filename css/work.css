@@ -21,10 +21,10 @@
     width: 80%;
 }
 
-#Work1, #Work2, #Work3{
+.work-content{
     padding: 10px;
     background-color: #FF00AA;
-    width: 26vw;
+    width: 18vw;
     height: auto;
     margin: 3vh auto 3vh auto;
     margin-top: -1vh;
@@ -37,7 +37,7 @@
     ;
 }
 
-#Work1 img, #Work2 img, #Work3 img{
+.work-content img{
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -46,7 +46,7 @@
     opacity: 0.2;
 }
 
-#Work1 h1, #Work2 h1, #Work3 h1{
+.work-content h1{
     position: absolute;
     top: 45%;
     left: 50%;
@@ -57,9 +57,9 @@
     width: 100%;
 }
 
-#Work1 p, #Work2 p, #Work3 p{
+.work-content p{
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
@@ -69,12 +69,12 @@
     transition: 0.5s;
 }
 @media screen and (min-width: 767px){
-    #Work1:hover, #Work2:hover, #Work3:hover{
-        width: 28vw;
+    .work-content:hover{
+        width: 20vw;
         height: auto; 
     }
     
-    #Work1:hover img, #Work2:hover img, #Work3:hover img{
+    .work-content img :hover{
         opacity: 1;
     }
 }
@@ -84,12 +84,12 @@
       flex-direction: column;
       align-items: center;
     }
-    #Work1, #Work2, #Work3{
+    .work-content{
         width: 100%;
         height: 15rem;
         
     }
-    #Work1 p, #Work2 p, #Work3 p{
+    .work-content p{
         top:60%
     }
   }
