@@ -19,6 +19,7 @@
 </head>
 
 <body>
+    
     <div class="nav" id="nav">
         <div class="logo">
             <img src="image/hor logo.jpg">
@@ -67,6 +68,7 @@
                 <source src="video/TIVHome.mp4" type="video/mp4">
             </video> -->
         <img src="image/heroImg.png" style="width: 100vw; object-fit: cover; height:90vh"/>
+        <button id="scrollButton"><img src="image/scrollDownpng.png" style="height: 30px; width: 30px;"></button>
         </div>
         <div id="About">
             <div id="About-bg">
@@ -103,6 +105,7 @@
                 </div>
             </div>
         </div>
+        <div id="targetSection"></div>
         <div class="partitions" id="Work">
             <h1 id="WorkH" style="color: white">
                 <center>Our Work</center>
@@ -284,6 +287,11 @@
         }
 
         setInterval(updateText2, 3000); 
+    </script>
+    <script>
+        document.getElementById("scrollButton").onclick = function() {
+            document.getElementById("targetSection").scrollIntoView({ behavior: 'smooth' });
+        }
     </script>
 </body>
 
